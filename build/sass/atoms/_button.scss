@@ -1,0 +1,95 @@
+// ---------- ---------- ---------- ---------- ----------
+// button
+// ---------- ---------- ---------- ---------- ----------
+
+a.button {
+  text-decoration: none;
+}
+.button {
+  background-color: $grey--light;
+  border: 1px solid $grey--dark;
+  border-radius: 8px;
+  color: $grey--darker;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+  padding: 12px 24px;
+  text-align: center;
+  // text-transform: uppercase;
+
+  // @media (min-width: 1940px) {
+  //   border-radius: 0.8vh;
+  //   font-size: 1.6vh;
+  //   padding: 1.2vh 2.4vh;
+  // }
+
+  &__copy {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+
+    // @media (min-width: 1940px) {
+    //   line-height: 2.4vh;
+    // }
+  }
+  &__icon, &__icon svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__icon svg {
+    margin-right: -4px;
+
+    // @media (min-width: 1940px) {
+    //   margin-right: 0.4vh;
+    // }
+  }
+  &__outline {
+    background-color: transparent;
+  }
+  &__link {
+    background: transparent;
+    border: none;
+    padding: 12px 0;
+
+    // @media (min-width: 1940px) {
+    //   padding: 1.2vh;
+    // }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &__invert {
+    color: $grey--light;
+  }
+  &__scroll {
+    border-radius: 50%;
+    line-height: 24px;
+    padding: 8px;
+
+    // @media (min-width: 1940px) {
+    //   line-height: 2.4vh;
+    //   padding: 0.8vh;
+    // }
+
+    span {
+      display: inline-block;
+      height: 24px;
+      margin-top: -4px;
+      width: 24px;
+
+      // @media (min-width: 1940px) {
+      // height: 2.4vh;
+      // margin-top: -0.4vh;
+      // width: 2.4vh;
+      // }
+
+      svg {
+        margin-right: 0;
+        stroke-width: 6;
+        stroke: $apple-green;
+      }
+    }
+  }
+}

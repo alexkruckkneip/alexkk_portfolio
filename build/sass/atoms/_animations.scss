@@ -1,0 +1,104 @@
+// pulse
+// ---------- ---------- ---------- ---------- ----------
+
+// pulse top
+@keyframes pulse--top {
+  0% {
+    top: -24px;
+  }
+  50% {
+    top: -48px;
+  }
+  100% {
+    top: -24px;
+  }
+}
+
+// pulse bottom
+@keyframes pulse--bottom {
+  0% {
+    bottom: -24px;
+  }
+  50% {
+    bottom: -48px;
+  }
+  100% {
+    bottom: -24px;
+  }
+}
+
+
+// rise and fall
+// ---------- ---------- ---------- ---------- ----------
+
+@keyframes raise--top {
+  0% {
+    top: -24px;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+
+@keyframes fall--bottom {
+  0% {
+    bottom: -24px;
+  }
+  100% {
+    bottom: -100vh;
+  }
+}
+
+
+// blend in
+// ---------- ---------- ---------- ---------- ----------
+
+@keyframes blend-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+// device hover
+// ---------- ---------- ---------- ---------- ----------
+
+@keyframes device__hover  {
+  0% {
+    margin-top: -8vh;
+  }
+  50% {
+    margin-top: -12vh;
+  }
+  100% {
+    margin-top: -8vh;
+  }
+}
+
+@keyframes device__hover--mobile  {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -4vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+@keyframes device__shadow  {
+  0% {
+    top: calc(100% + 4vh);
+  }
+  50% {
+    top: calc(100% + 6vh);
+  }
+  100% {
+    top: calc(100% + 4vh);
+  }
+}

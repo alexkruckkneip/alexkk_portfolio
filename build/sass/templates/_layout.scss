@@ -1,0 +1,50 @@
+// ---------- ---------- ---------- ---------- ----------
+// layout
+// ---------- ---------- ---------- ---------- ----------
+html {
+ background-color: $grey--darker;
+ height: 100%;
+}
+body {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+main {
+  overflow: hidden;
+  transition: opacity 0.4s 0.4s ease-in-out;
+}
+.svg-sprite {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+// ---------- ---------- ---------- ---------- ----------
+// content area
+// ---------- ---------- ---------- ---------- ----------
+.content {
+  &__wrapper {
+    width: 100%;
+  }
+  &__area {
+    width: $content-width--xl;
+    margin: 0 auto;
+
+    @media (min-width: 1940px) {
+      width: 64vw;
+    }
+    @media (max-width: $breakpoint--lg) {
+      width: $content-width--lg;
+    }
+    @media (max-width: $breakpoint--md) {
+      width: $content-width--md;
+    }
+    @media (max-width: $breakpoint--sm) {
+      width: $content-width--sm;
+    }
+    @media (max-width: $breakpoint--xs) {
+      width: $content-width--xs;
+    }
+  }
+}

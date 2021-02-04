@@ -1,0 +1,506 @@
+// ---------- ---------- ---------- ---------- ----------
+// slides
+// ---------- ---------- ---------- ---------- ----------
+
+.slide {
+
+  // ---------- ---------- ---------- ---------- ----------
+  // general slide styles
+  // ---------- ---------- ---------- ---------- ----------
+
+
+  display: block;
+  height: 100vh;
+  width: 100vw;
+
+  &:nth-child(2n+1) {
+    background: linear-gradient(135deg, $grey--darker, $grey--dark);
+  }
+  &:nth-child(2n) {
+    background: linear-gradient(45deg, $grey--darker, $grey--dark);
+  }
+
+  .content {
+    &__area {
+
+      > .row {
+        height: 100vh;
+
+        @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+          -ms-flex-direction: column!important;
+          flex-direction: column!important;
+        }
+      }
+      .button {
+        &__scroll {
+          border-color: lighten($grey--dark, 8);
+          bottom: 64px;
+          opacity: 0;
+          position: fixed;
+          right: 24px;
+          z-index: 2;
+
+          transition: opacity 0.8s ease-in-out,
+                      bottom 0.8s ease-in-out;
+
+          @media (max-width: $breakpoint--xs) {
+            left: auto;
+            right: 12px;
+          }
+        }
+        &__rotate {
+          transform: rotate(0deg);
+          transition: transform 0.8s ease-in-out;
+        }
+      }
+      .text__wrapper {
+        max-width: 360px;
+
+        .list--unordered {
+
+          @media (max-width: $breakpoint--xs) {
+            min-height: 24vh;
+            max-height: 24vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            max-width: 72vw;
+            padding-right: 24px;
+          }
+          @media (min-width: $breakpoint--xs) and (max-width: $breakpoint--sm) {
+            max-height: 48vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            max-width: 72vw;
+            padding-right: 24px;
+          }
+          @media (min-width: $breakpoint--sm) {
+            max-height: 48vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            max-width: 72vw;
+            padding-right: 24px;
+          }
+        }
+        @media (min-width: 1940px) {
+          max-width: 36vw;
+        }
+
+        &.active {
+          .button {
+            &__scroll {
+              bottom: 24px;
+              opacity: 1;
+
+              @media (max-width: $breakpoint--xs) {
+                bottom: 12px;
+              }
+            }
+            &__rotate {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        @media (max-width: $breakpoint--xs) {
+          .button__link {
+            padding: 8px 0;
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-child(2n) {
+    .content {
+      &__area {
+
+        > .row {
+          @media (min-width: $breakpoint--xs) {
+            -ms-flex-direction: row-reverse!important;
+            flex-direction: row-reverse!important;
+          }
+        }
+      }
+    }
+  }
+  &:nth-child(2n) {
+    .content {
+      &__area {
+
+        > .row {
+          > .col {
+            @media (min-width: $breakpoint--sm) {
+              -webkit-box-pack: end !important;
+              -ms-flex-pack: end !important;
+              justify-content: flex-end !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 24px;
+
+    @media (max-width: $breakpoint--sm) {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+  }
+  h2 {
+    margin-bottom: 24px;
+
+    @media (max-width: $breakpoint--sm) {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+  .text--light h3 {
+    color: $grey;
+  }
+  @media (max-width: $breakpoint--sm) {
+    p {
+      font-size: 14px;
+    }
+    .button {
+      &__copy {
+        font-size: 14px;
+      }
+    }
+  }
+
+
+  // ---------- ---------- ---------- ---------- ----------
+  // slide 01 landing
+  // ---------- ---------- ---------- ---------- ----------
+
+  &-01--landing {
+    // position: fixed;
+    // z-index: 1;
+    background: transparent;
+
+    .bg-animation {
+
+      // the wrapper contains the animation like a canvas
+      &__wrapper {
+        height: 100vh;
+        overflow: hidden;
+        width: 100vw;
+
+        // ---------- ---------- ---------- ---------- ----------
+        // background position responsive
+        // ---------- ---------- ---------- ---------- ----------
+
+        // background image
+        // ---------- ---------- ---------- ---------- ----------
+        .bg-animation {
+          //background-image: url("../img/bg-landing.jpg");
+          //background-repeat: repeat;
+          //background-position: 0 calc(50vh - 116px);
+          //background-size: 100% auto;
+          height: 100vh;
+          left: 0;
+          overflow: hidden;
+          position: relative;
+          top: 0;
+          width: 100vw;
+
+          svg {
+            height: auto;
+            width: 100vw;
+            fill: $apple-green;
+          }
+
+          // @media (max-width: 1100px) {
+          //   background-position: 0 calc(50vh - 64px);
+          // }
+          // @media (max-width: 820px) {
+          //   background-position: 0 calc(50vh - 116px);
+          // }
+          // @media (max-width: 1000px) and (max-aspect-ratio: 1/1) {
+          //   background-position: 0 calc(50vh - 116px);
+          // }
+          // @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
+          //   background-position: 0 calc(50vh - 24px);
+          // }
+          // @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
+          //   background-position: 0 calc(50vh - 24px);
+          // }
+        }
+
+        .gate-dark {
+          height: 100vh;
+          left: 0;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          width: 100vw;
+
+          svg {
+            height: 2000px;
+            margin-top: calc(((2000px - 100vh) / 2 ) * -1);
+            margin-left: calc(((2000px - 100vw) / 2 ) * -1);
+            // margin-left: 0;
+            width: 2000px;
+            position: fixed;
+            z-index: 1;
+          }
+
+          // gate top
+          // ---------- ---------- ---------- ---------- ----------
+          &--top {
+            svg {
+              filter: drop-shadow(0px 0px 12px black);
+              fill: url(#svg-gradiant--grey-dark) #4E5457;
+              stroke: $apple-green;
+              stroke-width: 1;
+
+              @media (min-width: 1940px) {
+                height: 104vw;
+                width: 104vw;
+              }
+            }
+          }
+
+          // gate bottom
+          // ---------- ---------- ---------- ---------- ----------
+          &--bottom {
+            svg {
+              fill: url(#svg-gradiant--grey-darker) #201E22;
+              stroke: $apple-green;
+              stroke-width: 1;
+              transition: margin-top 0.8s ease-in-out;
+
+              @media (min-width: 1940px) {
+                margin-top: calc((((104vw - 100vh) / 2 ) * -1));
+                margin-left: -2vw;
+                height: 104vw;
+                width: 104vw;
+              }
+              @media (max-aspect-ratio: 1/1) and (min-width: 1940px) {
+                margin-left: calc((((104vh - 100vw) / 2 ) * -1) - 64px);
+                margin-top: -40px;
+                height: 104vh;
+                width: 104vh;
+              }
+              @media (max-width: 1000px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 80px);
+              }
+              @media (max-width: 820px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 140px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 180px);
+              }
+              @media (max-width: 1000px) and (max-aspect-ratio: 1/1) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1));
+              }
+              @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
+              }
+              @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 208px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    // ---------- ---------- ---------- ---------- ----------
+    // content area
+    // ---------- ---------- ---------- ---------- ----------
+    .content {
+      &__wrapper {
+        position: fixed;
+        top: calc(50vh + 64px);
+        z-index: 1;
+
+
+
+        @media (max-width: 1000px) {
+          top: calc(50vh + 8px);
+        }
+        @media (max-width: 820px) {
+          top: calc(50vh - 52px);
+        }
+      }
+      &__area {
+        h1 {
+          color: $grey;
+          font-size: 16px;
+          line-height: 20px;
+
+          // @media (min-width: 1940px) {
+          //   font-size: 1.6vh;
+          //   line-height: 2.0vh;
+          // }
+
+          span {
+            margin-left: 16px;
+
+            @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
+              display: block;
+              margin-left: 0;
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    // button scroll down
+    // ---------- ---------- ---------- ---------- ----------
+    .button {
+      &--scroll-down {
+        position: relative;
+        outline: none;
+
+        @media (min-width: 1940px) {
+          padding-left: 0;
+        }
+
+        &__wrapper {
+          margin-top: 120px;
+          position: relative;
+
+          @media (min-width: 1940px) {
+            margin-top: 16vh;
+          }
+        }
+      }
+    }
+  }
+}
+.slide--01 {
+  .content {
+    &__area {
+      .text__wrapper {
+        &.active {
+          bottom: 64px;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &:nth-child(2n) {
+    background: transparent;
+  }
+}
+
+
+
+
+
+// ---------- ---------- ---------- ---------- ----------
+//
+// Project page
+//
+// ---------- ---------- ---------- ---------- ----------
+
+
+.project__page {
+
+  // ---------- ---------- ---------- ---------- ----------
+  // nav
+  // ---------- ---------- ---------- ---------- ----------
+
+
+  .button {
+    &__scroll {
+      border-color: $grey;
+
+      @media (max-width: $breakpoint--sm) {
+        // display: none;
+      }
+      svg {
+        stroke: $apple-green;
+      }
+    }
+  }
+
+  // page bg themes
+  &--orange--dark {
+    .slide {
+      &:nth-child(2n+1) {
+        background: linear-gradient(135deg, $orange--dark -48%, $grey--dark 24%, $grey--darker);
+      }
+      &:nth-child(2n) {
+        background: linear-gradient(45deg, $orange--dark -48%, $grey--dark 24%, $grey--darker);
+      }
+    }
+  }
+  &--apple-green {
+    .slide {
+      &:nth-child(2n+1) {
+        background: linear-gradient(135deg, $apple-green -48%, $grey--dark 24%, $grey--darker);
+      }
+      &:nth-child(2n) {
+        background: linear-gradient(45deg, $apple-green -48%, $grey--dark 24%, $grey--darker);
+      }
+    }
+  }
+  &--sand {
+    .slide {
+      &:nth-child(2n+1) {
+        background: linear-gradient(135deg, $sand -48%, $grey--dark 24%, $grey--darker);
+      }
+      &:nth-child(2n) {
+        background: linear-gradient(45deg, $sand -48%, $grey--dark 24%, $grey--darker);
+      }
+    }
+  }
+
+  // ---------- ---------- ---------- ---------- ----------
+  // slide
+  // ---------- ---------- ---------- ---------- ----------
+
+  .slide {
+    .content__area .text__wrapper {
+      @media (min-width: $breakpoint--sm) {
+        min-width: 420px;
+      }
+      @media (max-width: $breakpoint--sm) {
+        max-width: none;
+      }
+    }
+
+    &--01 {
+      transition: height 0.8s 0.8s ease-in-out;
+    }
+    &-01--landing .bg-animation__wrapper .gate-dark--top svg {
+      fill: transparent;
+      filter: drop-shadow(0 0 0 transparent);
+    }
+
+    // slide 02
+    // ---------- ---------- ---------- ---------- ----------
+
+    &#slide--02 {
+      h1 {margin-bottom: 0}
+      .toolbar {margin-top: 0}
+    }
+
+  }
+
+  // ---------- ---------- ---------- ---------- ----------
+  // loaded
+  // ---------- ---------- ---------- ---------- ----------
+  &.loaded {
+    .slide-01--landing.slide .bg-animation__wrapper .gate-dark--top svg {
+      margin-top: calc((100vh + 2000px) * -1);
+      opacity: 0;
+    }
+    .slide-01--landing .bg-animation__wrapper .gate-dark {
+      display: none;
+    }
+    .slide {
+      &--01 {
+        height: 0;
+      }
+      &--02 {
+        opacity: 1;
+      }
+    }
+  }
+}

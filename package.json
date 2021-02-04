@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-real-favicon": "^0.3.2",
+    "gulp-ttf2woff": "^1.1.1"
+  },
+  "dependencies": {
+    "4": "0.0.0",
+    "browser-sync": "^2.26.3",
+    "gulp-inject": "^4.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-ttf2eot": "^1.1.2",
+    "minimatch": "^3.0.2",
+    "nvm": "0.0.4",
+    "path": "^0.12.7",
+    "ttf2eot": "^2.0.0"
+  }
+}

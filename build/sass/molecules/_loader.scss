@@ -1,0 +1,397 @@
+// ---------- ---------- ---------- ---------- ----------
+// loader
+// ---------- ---------- ---------- ---------- ----------
+
+// button hexagon
+// ---------- ---------- ---------- ---------- ----------
+.loader {
+  opacity: 1;
+  position: fixed;
+  left: calc(50vw + 216px);
+  top: calc(1048px - (2000px - 100vh) / 2);
+  z-index: 1;
+
+  @media (min-width: 1940px) {
+    left: 61vw;
+    top: 56vh;
+  }
+  @media (max-width: 1000px) {
+    left: calc(50vw + 136px);
+    top: calc(968px - (2000px - 100vh) / 2);
+  }
+  @media (max-width: 820px) {
+    left: calc(50vw + 36px);
+    top: calc(928px - (2000px - 100vh) / 2);
+  }
+  @media (max-width: 1000px) and (max-aspect-ratio: 1/1) {
+    left: calc(50vw + 136px);
+    top: calc(968px - (2000px - 100vh) / 2);
+  }
+  @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
+    left: calc(50vw + 36px);
+    top: calc(968px - (2000px - 100vh) / 2);
+  }
+  @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
+    left: calc(50vw + 8px);
+    top: calc(1008px - (2000px - 100vh) / 2);
+  }
+
+  &__wrapper {
+    height: 208px;
+    position: relative;
+    width: 160px;
+    display: inline-block;
+
+    transition: height 0.8s 1s ease-out, width 0.8s 1s ease-out;
+
+    @media (min-width: 1940px) {
+      height: 20.8vh;
+      width: 16vh;
+    }
+
+    @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
+      height: 128px;
+    }
+  }
+
+  .btn-hexagon {
+
+    &__arrow {
+      height: 96px;
+      width: 96px;
+      position: absolute;
+      left: 50%;
+      margin-left: -48px;
+
+      transition: opacity 0.8s ease-out;
+      transition-delay: 0.4s;
+
+      @media (min-width: 1940px) {
+        height: 9.6vh;
+        width: 9.6vh;
+        margin-left: -4.8vh;;
+      }
+
+      &--up {
+        animation: pulse--top 2.4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      &--down {
+        animation: pulse--bottom 2.4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+
+// slides
+// ---------- ---------- ---------- ---------- ----------
+.slide {
+  &:nth-child(n+3) {
+    opacity: 0;
+    display: none;
+  }
+}
+
+// slide 01 landing
+// ---------- ---------- ---------- ---------- ----------
+.slide.slide {
+  &-01--landing {
+
+    .bg-animation {
+
+      // the wrapper contains the animation like a canvas
+      &__wrapper {
+
+        .gate-dark {
+
+          // gate top
+          // ---------- ---------- ---------- ---------- ----------
+          &--top {
+            svg {
+              opacity: 1;
+              margin-top: calc((((2000px - 100vh) / 2 ) * -1));
+              margin-left: calc((((2000px - 100vw) / 2 ) * -1));
+
+              @media (min-width: 1940px) {
+                margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 0vh);
+                margin-left: -2vw;
+              }
+              @media (max-width: 1000px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 80px);
+              }
+              @media (max-width: 820px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 140px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 180px);
+              }
+              @media (max-width: 1000px) and (max-aspect-ratio: 1/1) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 40px);
+              }
+              @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
+              }
+              @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 208px);
+              }
+
+              transition: margin-top 0.8s ease-out, margin-left 0.8s ease-out, opacity 0.4s ease-out;
+            }
+          }
+        }
+      }
+    }
+    .content {
+      &__wrapper {
+        h1 {
+          margin-top: 40px;
+          transition: margin-top 0.8s 0.8s ease-out;
+        }
+        .button--scroll-down__wrapper {
+          opacity: 0;
+          transition: opacity 0.8s 1.6s ease-out;
+        }
+      }
+    }
+  }
+}
+
+
+// ---------- ---------- ---------- ---------- ----------
+// animation loaded
+// ---------- ---------- ---------- ---------- ----------
+
+.loaded {
+
+  .slide {
+    &:nth-child(n+2) {
+      opacity: 1;
+      display: block;
+    }
+  }
+  .slide.slide {
+
+    // Gate open
+    &.start__gate {
+
+      .bg-animation {
+
+        // the wrapper contains the animation like a canvas
+        &__wrapper {
+
+          .gate-dark {
+
+            svg {
+              display: none;
+              stroke: none;
+              transition: margin-top 1.6s ease-in-out, margin-left 1.6s ease-in-out;
+            }
+
+            // gate top
+            // ---------- ---------- ---------- ---------- ----------
+            &--top {
+              svg {
+                margin-top: -2000px;
+
+                @media (min-width: 1940px) {
+                  margin-top: -200vh;
+                }
+              }
+            }
+
+            // gate bottom
+            // ---------- ---------- ---------- ---------- ----------
+            &--bottom {
+              svg {
+                margin-top: 1000px;
+              }
+            }
+          }
+        }
+
+      }
+      .content {
+        &__wrapper {
+          display: none;
+          h1 {
+            margin-top: -100vh;
+            opacity: 0;
+          }
+          .button--scroll-down__wrapper {
+            margin-top: 200vh;
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    // Gate closed
+    &-01--landing.start__gate--closed {
+
+      .bg-animation {
+
+        // the wrapper contains the animation like a canvas
+        &__wrapper {
+
+          .gate-dark {
+
+            // gate top
+            // ---------- ---------- ---------- ---------- ----------
+            &--top {
+              svg {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 40px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) + 12px);
+
+                @media (min-width: 1940px) {
+                  margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 2.4vh);
+                  margin-left: -1.7vw;
+                }
+                @media (max-width: 1000px) {
+                  margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px);
+                  margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 68px);
+                }
+                @media (max-width: 820px) {
+                  margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 180px);
+                  margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 168px);
+                }
+                @media (max-width: 1000px) and (max-aspect-ratio: 1/1) {
+                  margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 40px);
+                }
+                @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
+                  margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px);
+                }
+                @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
+                  margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 196px);
+                }
+              }
+            }
+
+
+            // gate bottom
+            // ---------- ---------- ---------- ---------- ----------
+            &--bottom {
+              svg {
+                margin-top: calc(((2000px - 100vh) / 2 ) * -1);
+
+                @media (min-width: 1940px) {
+                  margin-top: calc((((104vw - 100vh) / 2 ) * -1));
+                }
+                @media (max-aspect-ratio: 1/1) and (min-width: 1940px) {
+                  margin-top: -40px;
+                }
+                @media (max-width: 1000px) {
+                  margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
+                }
+                @media (max-width: 820px) {
+                  margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 140px);
+                }
+                @media (max-width: 1000px) and (max-aspect-ratio: 1/1) {
+                  margin-top: calc((((2000px - 100vh) / 2 ) * -1));
+                }
+                @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
+                  margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
+                }
+                @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
+
+                }
+              }
+            }
+          }
+        }
+
+      }
+      .content {
+        &__wrapper {
+          h1 {
+            margin-top: 0;
+            opacity: 1;
+          }
+          .button--scroll-down__wrapper {
+            margin-top: 120px;
+            opacity: 1;
+
+            @media (min-width: 1940px) {
+              margin-top: 200px;
+            }
+            @media (min-width: 2440px) {
+              margin-top: 280px;
+            }
+            @media (min-width: 3600px) {
+              margin-top: 480px;
+            }
+
+            @media (orientation: portrait) and (min-width: 400px) {
+              margin-top: 200px;
+            }
+          }
+        }
+      }
+    }
+
+    // Gate hidden
+    &-01--landing.start__gate--visible {
+
+      .bg-animation {
+
+        // the wrapper contains the animation like a canvas
+        &__wrapper {
+
+          .gate-dark {
+
+            svg {
+                display: block;
+            }
+          }
+        }
+
+      }
+      .content {
+        &__wrapper {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .loader {
+    z-index: 2;
+
+    &__wrapper {
+      height: 0;
+      width: 0;
+    }
+    .btn-hexagon {
+
+      &__arrow {
+        opacity: 0;
+
+        &--up {
+          animation: raise--top 0.96s;
+          animation-timing-function: ease-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+        &--down {
+          animation: fall--bottom 0.96s;
+          animation-timing-function: ease-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+  .slide--01 {
+    .content {
+      &__area {
+        .text__wrapper {
+          &.active {
+            bottom: 24px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

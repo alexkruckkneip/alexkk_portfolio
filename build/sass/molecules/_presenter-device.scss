@@ -1,0 +1,199 @@
+// ---------- ---------- ---------- ---------- ----------
+// presenter-device
+// ---------- ---------- ---------- ---------- ----------
+
+.device {
+  &__wrapper {
+    height: 100vh;
+    perspective: 50vh;
+    width: 50vw;
+
+    @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+      height: 50vh;
+      width: 100vw;
+    }
+  }
+  &__body {
+    animation: device__hover 4.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+      animation: device__hover--mobile 4.8s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    background: linear-gradient(48deg, $grey--darker, $grey--dark);
+    border: 1px solid $grey;
+    border-radius: 1.2vh;
+    display: inline-block;
+    padding: 2vh 2vh;
+    position: relative;
+    width: 32vw;
+
+    @media (max-aspect-ratio: 1/1) {
+      border-radius: 1.2vh;
+      margin-top: -4vh;
+      padding: 1vh 1vh;
+    }
+    @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+      margin-left: 0;
+      margin-top: 0;
+      width: 64%;
+    }
+    &--portrait {
+      width: 24vw;
+
+      @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+        width: 48%;
+      }
+    }
+  }
+  &__display {
+    background-color: $grey--darker;
+    border-radius: 0.32vh;
+    box-shadow: 0 0 8px 0 rgba($grey--darker, 0.2);
+    margin-top: -2px;
+    overflow: hidden;
+    padding: 0.2vh;
+  }
+  &__image {
+    img, video {
+      width: 100%;
+      opacity: 0.8;
+    }
+  }
+  &__shadow {
+    animation: device__shadow 4.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    background-color:rgba($grey--darker, 0.24);
+    box-shadow: 0 0 2vh 1vh rgba($grey--darker, 0.24);
+    border-radius: 50%;
+    height: 1px;
+    left: 1vh;
+    position: absolute;
+    right: 1vh;
+  }
+  // helper classes {
+  &__border--purple-red {
+    border-color: $purple-red;
+  }
+  &__border--apple-green {
+    border-color: $apple-green;
+  }
+  &__border--orange--dark {
+    border-color: $orange--dark;
+  }
+  &__border--sand {
+    border-color: $sand;
+  }
+}
+
+
+// rotate
+// ---------- ---------- ---------- ---------- ----------
+
+.slide {
+  &:nth-child(2n+1) {
+
+    .device__wrapper {
+      margin-left: calc((50vw - (#{$content-width--xl} / 2)) * -1);
+
+      @media (min-width: 1940px) {
+        margin-left: calc((50vw - (64vw / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--lg) {
+        margin-left: calc((50vw - (#{$content-width--lg} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--md) {
+        margin-left: calc((50vw - (#{$content-width--md} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--sm) {
+        margin-left: calc((50vw - (#{$content-width--sm} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--xs) {
+        margin-left: calc((50vw - (#{$content-width--xs} / 2)) * -1);
+      }
+
+      .device {
+
+        &__body {
+          margin-left: 4.8vw;
+
+          transform:          rotateY(0deg);
+          -webkit-transform:  rotateY(0deg);
+          transform-style: flat;
+
+          transition: transform 1s ease-in-out, margin-left 1s ease-in-out;
+
+          &.visible {
+            transform:          rotateY(10deg);
+            -webkit-transform:  rotateY(10deg);
+            transform-style: flat;
+          }
+          &:hover {
+            transform:          rotateY(0deg);
+            -webkit-transform:  rotateY(0deg);
+            transform-style: flat;
+            transform:          scale(1.4);
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-child(2n) {
+
+    // reverse
+    .device__wrapper {
+
+      margin-left: 0;
+      margin-right: calc((50vw - (#{$content-width--xl} / 2)) * -1);
+
+      @media (max-width: $breakpoint--lg) {
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--lg} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--md) {
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--md} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--sm) {
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--sm} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--xs) {
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--xs} / 2)) * -1);
+      }
+      .device__body {
+        margin-right: 4.8vw;
+
+        transform:          rotateY(0deg);
+        -webkit-transform:  rotateY(0deg);
+        transform-style: flat;
+
+        transition: transform 1s ease-in-out;
+
+        @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+          margin-left: -8vw;
+        }
+        &.visible {
+          transform:          rotateY(-10deg);
+          -webkit-transform:  rotateY(-10deg);
+          transform-style: flat;
+        }
+        &:hover {
+          transform:          rotateY(0deg);
+          -webkit-transform:  rotateY(0deg);
+          transform-style: flat;
+          transform:          scale(1.4);
+
+        }
+      }
+    }
+  }
+}

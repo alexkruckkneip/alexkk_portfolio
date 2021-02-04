@@ -1,0 +1,46 @@
+// ---------- ---------- ---------- ---------- ----------
+// icon
+// ---------- ---------- ---------- ---------- ----------
+
+.icon {
+  color: $grey--darker;
+  display: inline-block;
+  fill: transparent;
+  height: 24px;
+  stroke: $grey--dark;
+  stroke-width: 3;
+  stroke-linecap: round;
+  width: 16px;
+
+  // @media (min-width: 1940px) {
+  //   height: 2.4vh;
+  //   stroke-width: 0.1vh;
+  //   width: 2.4vh;
+  // }
+
+  &--invert {
+    stroke: $grey--light;
+  }
+
+
+  // sizes
+  // ---------- ---------- ---------- ---------- ----------
+
+  &--48x48px {
+    height: 48px;
+    width: 48px;
+
+    @media (min-width: 1940px) {
+      height: 4.8vh;
+      width: 4.8vh;
+    }
+  }
+
+
+  // helper
+  // ---------- ---------- ---------- ---------- ----------
+
+  &__chevron-left {
+    transform: rotate(-90deg);
+  }
+}

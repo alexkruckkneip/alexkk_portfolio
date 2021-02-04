@@ -1,0 +1,212 @@
+// ---------- ---------- ---------- ---------- ----------
+// navbar
+// ---------- ---------- ---------- ---------- ----------
+
+.navbar {
+  position: fixed;
+  top: -48px;
+  z-index: 2;
+  left: 0;
+
+  // @media (min-width: 1940px) {
+  //   top: -4.8vh;
+  // }
+
+  @media (max-width: $breakpoint--sm) {
+    left: auto;
+    right: 0;
+    z-index: 5;
+  }
+
+  transition: top 0.8s ease-in-out;
+
+  .navbar__bg {
+    svg {
+      fill: rgba($grey--dark, 0.48);
+      stroke: $grey--dark;
+      stroke-width: 1;
+      position: fixed;
+      top: -50px;
+      right: 33.333334vw;
+      height: 42px;
+      z-index: 0;
+
+      transition: top 0.8s ease-in-out;
+
+      // @media (min-width: 1940px) {
+      //   top: -5vh;
+      //   height: 4.2vh;
+      // }
+
+      @media (max-width: $breakpoint--sm) {
+        display: none;
+      }
+    }
+  }
+  &__close-area {
+    display: none;
+
+    @media (max-width: $breakpoint--sm) {
+      background-color: rgba($grey--darker, 0.64);
+      display: block;
+      left: -34vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      width: 34vw;
+
+      transition: left 0.8s ease-in-out;
+    }
+  }
+  &__toggler {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    margin-top: 12px;
+    margin-right: 12px;
+    outline: none;
+    padding: 8px;
+    position: relative;
+    vertical-align: middle;
+    z-index: 4;
+
+    @media (max-width: $breakpoint--sm) {
+      display: block;
+    }
+    &__wrapper {
+      display: inline-block;
+      height: 24px;
+      position: relative;
+      vertical-align: middle;
+      width: 24px;
+    }
+    &-bar {
+      background-color: $apple-green;
+      height: 2px;
+      left: 2px;
+      position: absolute;
+      transform: rotate(0deg);
+      width: 20px;
+
+      transition: transform 0.4s ease-in-out,
+                  left 0.4s ease-in-out,
+                  top 0.4s ease-in-out,
+                  width 0.4s ease-in-out;
+
+      &:nth-child(1) {
+        top: 4px;
+      }
+      &:nth-child(2) {
+        top: 12px;
+      }
+      &:nth-child(3) {
+        top: 20px;
+        margin-bottom: 1px;
+      }
+    }
+    &--open {
+      .navbar__toggler-bar {
+
+        &:nth-child(1) {
+          top: 12px;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          left: 12px;
+          width: 0;
+        }
+        &:nth-child(3) {
+          top: 12px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &__collapse {
+    position: relative;
+    z-index: 3;
+
+    @media (max-width: $breakpoint--sm) {
+      background-color: $grey--darker;
+      height: 100vh;
+      right: -66vw;
+      position: fixed;
+      top: 0;
+      width: 66vw;
+
+      transition: right 0.8s ease-in-out;
+    }
+    &--open {
+      right: 0;
+
+      .navbar__close-area {
+        left: 0;
+      }
+    }
+  }
+  &__nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding-left: 12px;
+
+    // @media (min-width: 1940px) {
+    //   padding-left: 1.2vh;
+    // }
+
+    @media (max-width: $breakpoint--sm) {
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0;
+      padding-top: 64px;
+    }
+
+    .nav {
+      &__link  {
+        display: inline-block;
+        color: $grey;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 8px 12px;
+        z-index: 1;
+
+        // @media (min-width: 1940px) {
+        //   font-size: 1.4vh;
+        //   line-height: 2.4vh;
+        //   padding: 0.8vh 1.2vh;
+        // }
+
+        @media (max-width: $breakpoint--sm) {
+          display: block;
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+        &--active {
+          color: $apple-green;
+        }
+      }
+    }
+  }
+}
+
+.loaded {
+  .navbar {
+    top: 0px;
+
+    .navbar__bg {
+      svg {
+        top: -2px;
+
+        // @media (min-width: 1940px) {
+        //   top: -0.2vh;
+        // }
+      }
+    }
+  }
+}

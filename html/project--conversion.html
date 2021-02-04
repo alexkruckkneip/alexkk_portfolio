@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AlexKK - Project - Conversion</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<!-- JS -->
+	<script src="/assets/js/jquery-3.3.1.min.js"></script>
+	<script src="/assets/js/main.js"></script>
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#201E22">
+	<!-- <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png"> -->
+	<meta name="theme-color" content="#201E22">
+
+	<!-- LinkedIn -->
+	<meta property="og:title" content="AlexKK - Project - Conversion"/>
+	<meta property="og:image" content="http://alexkk.ie/assets/img/image__placeholder--project-02.jpg"/>
+	<meta property="og:description" content="
+	----------
+	THE CHALLENGE
+	----------
+		- Feedback from UXR: Customers would like to compare cars in detail to find the best deal
+		- Every change has to deliver massively more bookings
+		- The page is already overloaded with distractions
+		- Dev team has massively difficulties implementing even small changes to the code"/>
+	<meta property="og:url" content="http://alexkk.ie/project--conversion.html" />
+
+	<!-- SVG Sprite -->
+	<div class="svg-sprite">
+		<!-- inject:svg -->
+		<svg xmlns="http://www.w3.org/2000/svg"><symbol id="hexagon__arrow--down" viewbox="0 0 96 96"><path data-name="Path 14" d="M16 36l27.2 20.4a8 8 0 0 0 9.6 0L80 36"/></symbol><symbol id="hexagon__arrow--up" viewbox="0 0 96 96"><path data-name="Path 14" d="M80 60L52.8 39.6a8 8 0 0 0-9.6 0L16 60"/></symbol></svg>
+		<!-- endinject -->
+		<!-- svg gradiant grey -->
+		<svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+		  <lineargradient id="svg-gradiant--grey-dark" x2="1" y2="1">
+				<stop offset="0%" stop-color="#201E22"/>
+				<stop offset="100%" stop-color="#323336"/>
+		  </lineargradient>
+		</svg>
+		<svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+		  <lineargradient id="svg-gradiant--grey-darker" x2="1" y2="1">
+				<stop offset="0%" stop-color="#323336"/>
+				<stop offset="100%" stop-color="#201E22"/>
+		  </lineargradient>
+		</svg>
+	</div>
+</head>
+<body class="project__page">
+	<!-- loader animation -->
+	<span class="loader">
+		<div class="loader__wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" class="btn-hexagon__arrow btn-hexagon__arrow--up" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#hexagon__arrow--up"/></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" class="btn-hexagon__arrow btn-hexagon__arrow--down" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#hexagon__arrow--down"/></svg>
+		</div>
+	</span>
+	<!-- ---------- ---------- ---------- ---------- ----------
+	main
+	---------- ---------- ---------- ---------- ---------- -->
+	<main>
+		<!--Navigation top
+		---------- ---------- ---------- ---------- ---------- -->
+		<nav class="navbar navbar__sticky">
+			<!-- navbar bg svg -->
+			<div class="navbar__bg">
+				<svg id="navbar" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 4000 48">
+					<path id="nav__bg" class="cls-1" d="M115.5,32.5,78.665,76.349A12.2,12.2,0,0,1,69.423,80.5H-3884.5v-48Z" transform="translate(3884.5 -32.5)"/>
+				</svg>
+			</div>
+			<button class="navbar__toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="navbar__toggler__wrapper">
+					<div class="navbar__toggler-bar"></div>
+					<div class="navbar__toggler-bar"></div>
+					<div class="navbar__toggler-bar"></div>
+				</div>
+			</button>
+			<!-- navbar -->
+			<div id="navbar__menu__nav" class="collapse navbar__collapse">
+				<ul class="navbar__nav">
+					<li class="nav__item">
+						<a class="nav__link" href="index.html">Start</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--active" href="project__index.html">Projects</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="about-me.html">About me</a>
+					</li>
+				</ul>
+				<div class="navbar__close-area"></div>
+			</div>
+			<!-- / navbar -->
+		</nav>
+		<!-- ---------- ---------- ---------- ---------- ----------
+		slide 01 landing
+		---------- ---------- ---------- ---------- ---------- -->
+		<div id="slide--01" class="slide slide--01 slide-01--landing">
+			<!-- animation wrapper -->
+			<div class="bg-animation__wrapper">
+				<div class="gate-dark gate-dark--top">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 2000 2000">
+						<defs>
+							<style>
+							.svg-clip-path {
+								clip-path: url(#clip-gate-dark_top);
+							}
+							.svg-transparent {
+								fill: transparent;
+							}
+							</style>
+							<clippath id="clip-gate-dark_top">
+								<rect width="2000" height="2000"/>
+							</clippath>
+						</defs>
+						<g id="gate-dark_top" data-name="gate-dark—top" class="svg-clip-path">
+							<rect class="svg-transparent" width="2000" height="2000"/>
+							<path id="Path_12" data-name="Path 12" d="M859.5,80.5H241.939a12.233,12.233,0,0,1-9.213-4.151l-33.236-39.7a12.2,12.2,0,0,0-9.242-4.151H121.064a12.216,12.216,0,0,0-9.242,4.151l-33.156,39.7A12.2,12.2,0,0,1,69.423,80.5H-1140.5v-1192h2000Z" transform="translate(1140.5 1111.5)"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- / animation wrapper -->
+		</div>
+		<!-- ---------- ---------- ---------- ---------- ----------
+		slide 02
+		---------- ---------- ---------- ---------- ---------- -->
+		<div id="slide--02" class="slide">
+			<div class="content__wrapper ">
+				<div class="content__area">
+					<div class="row">
+						<div class="col">
+							<!-- device 3d rotated -->
+							<div class="device__wrapper d-flex align-items-center justify-content-center">
+								<!-- device -->
+								<div class="device__body visible device__border--apple-green">
+										<div class="device__display">
+											<div class="device__image d-flex align-items-center">
+												<video src="assets/img/rentalcars/rc-filter-ideas__03_01--landscape.mp4" controls="false" loop="true" autoplay="true">
+										      <p>Your browser doesn't support HTML5 video.</p>
+										    </video>
+											</div>
+										</div>
+										<!-- device shadow -->
+										<div class="device__shadow"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col d-flex align-items-center align-items-start--xs">
+							<div class="text__wrapper text--light">
+								<h3 class="text--uppercase">Project</h3>
+								<h1 class="text--uppercase text--apple-green">Conversion</h1>
+								<div class="toolbar">
+									<button href="#slide--03" class="button button__link button__invert d-flex align-items-center">
+										<span class="button__icon">
+											<!-- icon chevron down invert -->
+											<svg class="icon icon__chevron-down icon--invert" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+												</g>
+											</svg>
+										</span>
+										<span class="button__copy ml-3">The Challenge</span>
+									</button>
+									<button href="#slide--04" class="button button__link button__invert d-flex align-items-center">
+										<span class="button__icon">
+											<!-- icon chevron down invert -->
+											<svg class="icon icon__chevron-down icon--invert" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+												</g>
+											</svg>
+										</span>
+										<span class="button__copy ml-3">Analysis Setup</span>
+									</button>
+									<button href="#slide--05" class="button button__link button__invert d-flex align-items-center">
+										<span class="button__icon">
+											<!-- icon chevron down invert -->
+											<svg class="icon icon__chevron-down icon--invert" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+												</g>
+											</svg>
+										</span>
+										<span class="button__copy ml-3">Best Finding</span>
+									</button>
+									<button href="#slide--06" class="button button__link button__invert d-flex align-items-center">
+										<span class="button__icon">
+											<!-- icon chevron down invert -->
+											<svg class="icon icon__chevron-down icon--invert" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+												</g>
+											</svg>
+										</span>
+										<span class="button__copy ml-3">BPD Increase</span>
+									</button>
+								</div>
+								<!-- button next slide -->
+								<button href="#slide--03" class="button button__outline button__invert button__scroll">
+									<span class="button__icon">
+										<!-- icon chevron down invert -->
+										<svg class="icon icon--invert icon__chevron-down icon--invert" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+											<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+												<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+											</g>
+										</svg>
+									</span>
+								</button>
+								<!-- / button next slide -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ---------- ---------- ---------- ---------- ----------
+		slide 03 - The Challenge
+		---------- ---------- ---------- ---------- ---------- -->
+		<div id="slide--03" class="slide">
+			<div class="content__wrapper">
+				<div class="content__area">
+					<div class="row">
+						<div class="col">
+							<!-- device 3d rotated -->
+							<div class="device__wrapper d-flex align-items-center justify-content-center">
+								<!-- device -->
+								<div class="device__body device__border--apple-green">
+										<div class="device__display">
+											<div class="device__image d-flex align-items-center">
+												<img src="assets/img/rentalcars/01_00-rentalcars_search_results.png" alt="image-example-complexity">
+											</div>
+										</div>
+										<!-- device shadow -->
+										<div class="device__shadow"></div>
+								</div>
+							</div>
+							<!-- / device 3d rotated -->
+						</div>
+						<div class="col d-flex align-items-center align-items-start--xs">
+							<div class="text__wrapper text--light">
+								<h1 class="text--uppercase text--apple-green">The Challenge</h1>
+								<ul class="list--unordered">
+									<li><span>Feedback from UXR: Customers would like to compare cars in detail to find the best deal</span></li>
+									<li><span>Every change has to deliver massively more bookings</span></li>
+									<li><span>The page is already overloaded with distractions</span></li>
+									<li><span>Dev team has massively difficulties implementing even small changes to the code</span></li>
+								</ul>
+								
+								<div class="hide--xs toolbar">
+
+									<button href="#slide--04" class="button button__link button__invert d-flex align-items-center">
+										<span class="button__icon">
+											<!-- icon chevron down invert -->
+											<svg class="icon icon__chevron-down icon--invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"></path>
+												</g>
+											</svg>
+										</span>
+										<span class="button__copy ml-3">Next Slide</span>
+									</button>
+
+								</div>
+
+								<!-- button next slide -->
+								<button href="#slide--04" class="button button__outline button__invert button__scroll">
+									<span class="button__icon">
+										<!-- icon chevron down invert -->
+										<svg class="icon icon--invert icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+											<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+												<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+											</g>
+										</svg>
+									</span>
+								</button>
+								<!-- / button next slide -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ---------- ---------- ---------- ---------- ----------
+		slide 04 - Analysis Setup
+		---------- ---------- ---------- ---------- ---------- -->
+		<div id="slide--04" class="slide">
+			<div class="content__wrapper">
+				<div class="content__area">
+					<div class="row">
+						<div class="col">
+							<!-- device 3d rotated -->
+							<div class="device__wrapper d-flex align-items-center justify-content-center">
+								<!-- device -->
+								<div class="device__body device__border--apple-green">
+										<div class="device__display">
+											<div class="device__image d-flex align-items-center">
+												<img src="assets/img/rentalcars/04-competitor_analysis-better_filter.png" alt="image-example-complexity">
+											</div>
+										</div>
+										<!-- device shadow -->
+										<div class="device__shadow"></div>
+								</div>
+							</div>
+							<!-- / device 3d rotated -->
+						</div>
+						<div class="col d-flex align-items-center align-items-start--xs">
+							<div class="text__wrapper text--light">
+								<h1 class="text--uppercase text--apple-green">Analysis Setup</h1>
+								<ul class="list--unordered">
+									<li><span>I choosed Atlassian Confluence for maximum transparency with the stakeholders</span></li>
+									<li><span>I did a matrix check on 30 different features/elements, 10 direct competitors, 17 biggest suppliers and 8 world best eCommerce websites</span></li>
+									<li><span>All together 1,050 intersections</span></li>
+									<li><span>I created a Recommendation Matrix to highlight most important findings</span></li>
+								</ul>
+								
+								<div class="hide--xs toolbar">
+
+									<button href="#slide--05" class="button button__link button__invert d-flex align-items-center">
+										<span class="button__icon">
+											<!-- icon chevron down invert -->
+											<svg class="icon icon__chevron-down icon--invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"></path>
+												</g>
+											</svg>
+										</span>
+										<span class="button__copy ml-3">Next Slide</span>
+									</button>
+
+								</div>
+								
+								<!-- button next slide -->
+								<button href="#slide--05" class="button button__outline button__invert button__scroll">
+									<span class="button__icon">
+										<!-- icon chevron down invert -->
+										<svg class="icon icon--invert icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+											<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+												<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+											</g>
+										</svg>
+									</span>
+								</button>
+								<!-- / button next slide -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ---------- ---------- ---------- ---------- ----------
+		slide 05 - Best Finding
+		---------- ---------- ---------- ---------- ---------- -->
+		<div id="slide--05" class="slide">
+			<div class="content__wrapper">
+				<div class="content__area">
+					<div class="row">
+						<div class="col">
+							<!-- device 3d rotated -->
+							<div class="device__wrapper d-flex align-items-center justify-content-center">
+								<!-- device -->
+								<div class="device__body device__border--apple-green">
+										<div class="device__display">
+											<div class="device__image d-flex align-items-center">
+												<img src="assets/img/rentalcars/Screen_Shot-iPad-2018-11-11-11_54_41.png" alt="image-example-complexity">
+											</div>
+										</div>
+										<!-- device shadow -->
+										<div class="device__shadow"></div>
+								</div>
+							</div>
+							<!-- / device 3d rotated -->
+						</div>
+						<div class="col d-flex align-items-center align-items-start--xs">
+							<div class="text__wrapper text--light">
+								<h1 class="text--uppercase text--apple-green">Best Finding</h1>
+								<ul class="list--unordered">
+									<li><span>Open the offer details in a new tab for shortlisting!</span></li>
+									<li><span>When I made the screenshot the feature was still implemented</span></li>
+								</ul>
+								
+								<div class="hide--xs toolbar">
+
+									<button href="#slide--06" class="button button__link button__invert d-flex align-items-center">
+										<span class="button__icon">
+											<!-- icon chevron down invert -->
+											<svg class="icon icon__chevron-down icon--invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"></path>
+												</g>
+											</svg>
+										</span>
+										<span class="button__copy ml-3">Next Slide</span>
+									</button>
+
+								</div>
+								
+								<!-- button next slide -->
+								<button href="#slide--06" class="button button__outline button__invert button__scroll">
+									<span class="button__icon">
+										<!-- icon chevron down invert -->
+										<svg class="icon icon--invert icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+											<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+												<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+											</g>
+										</svg>
+									</span>
+								</button>
+								<!-- / button next slide -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ---------- ---------- ---------- ---------- ----------
+		slide 06 - BPD Increase
+		---------- ---------- ---------- ---------- ---------- -->
+		<div id="slide--06" class="slide">
+			<div class="content__wrapper">
+				<div class="content__area">
+					<div class="row">
+						<div class="col">
+							<!-- device 3d rotated -->
+							<div class="device__wrapper d-flex align-items-center justify-content-center">
+								<!-- device -->
+								<div class="device__body device__border--apple-green">
+										<div class="device__display">
+											<div class="device__image d-flex align-items-center">
+												<img src="assets/img/rentalcars/Rentalcars-BPD_increase.png" alt="image-example-complexity">
+											</div>
+										</div>
+										<!-- device shadow -->
+										<div class="device__shadow"></div>
+								</div>
+							</div>
+							<!-- / device 3d rotated -->
+						</div>
+						<div class="col d-flex align-items-center align-items-start--xs">
+							<div class="text__wrapper text--light">
+								<h1 class="text--uppercase text--apple-green">BPD Increase</h1>
+								<ul class="list--unordered">
+									<li><span>Everything above +100 BPD makes more than £1M/year for the company</span></li>
+								</ul>
+
+								<div class="toolbar">
+									<a href="project--vision.html" target="_blank" class="button button__link button__invert d-flex align-items-center">
+										<span class="button__copy text--apple-green">Next UX Project…</span>
+										<span class="button__icon">
+											<!-- icon chevron down invert -->
+											<svg class="icon icon--invert icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+												</g>
+											</svg>
+										</span>
+									</a>
+								</div>
+								
+								<!-- button go to top slide -->
+								<button href="#slide--02" class="button button__outline button__invert button__scroll button__rotate">
+									<span class="button__icon">
+										<!-- icon chevron down invert -->
+										<svg class="icon icon--invert icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+											<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
+												<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
+											</g>
+										</svg>
+									</span>
+								</button>
+								<!-- / button go to top slide -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- ---------- ---------- ---------- ---------- ----------
+	/ main
+	---------- ---------- ---------- ---------- ---------- -->
+	</body>
+	</html>

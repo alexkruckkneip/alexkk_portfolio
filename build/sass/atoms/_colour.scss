@@ -1,0 +1,21 @@
+// ---------- ---------- ---------- ---------- ----------
+// colour
+// ---------- ---------- ---------- ---------- ----------
+$purple-red: #5A1E30;
+$apple-green: #BEAB43;
+$apple-green--dark: #8B804B;
+$sand: #C1A991;
+$orange--dark: #C14E34;
+$skin: #D9BDAD;
+$skin--light: #F0E0D3;
+
+// Grey
+// ---------- ---------- ---------- ---------- ----------
+$grey--darker: #201E22;
+$grey--dark: #4E5457;
+$grey: #8A837D;
+$grey--light: lighten($grey, 10);
+$grey--lighter: lighten($grey, 20);
+$white--darker: lighten($grey, 30);
+$white--dark: lighten($grey, 40);
+$white: lighten($grey, 50);

@@ -1,0 +1,94 @@
+// ---------- ---------- ---------- ---------- ----------
+// grid
+// ---------- ---------- ---------- ---------- ----------
+
+// flex
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+
+// col general attributes and values
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+
+  @media (min-width: $breakpoint--sm) and (max-width: $breakpoint--md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  padding: 0 12px;
+
+  @media (min-width: $breakpoint--sm) and (max-width: $breakpoint--md) {
+    max-width: 50%;
+    padding: 0;
+  }
+  @media (max-width: $breakpoint--xs) {
+    max-width: calc(100vw - 48px);
+  }
+}
+.justify-content-start {
+  -webkit-box-pack: start!important;
+  -ms-flex-pack: start!important;
+  justify-content: flex-start!important;
+}
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+.justify-content-end {
+  -webkit-box-pack: end!important;
+  -ms-flex-pack: end!important;
+  justify-content: flex-end!important;
+}
+.flex-row-reverse {
+  -webkit-box-orient: horizontal!important;
+  -webkit-box-direction: reverse!important;
+  -ms-flex-direction: row-reverse!important;
+  flex-direction: row-reverse!important;
+}
+.flex-column-reverse {
+  -webkit-box-orient: vertical!important;
+  -webkit-box-direction: reverse!important;
+  -ms-flex-direction: column-reverse!important;
+  flex-direction: column-reverse!important;
+}
+
+// breakpoint sm
+@media (max-width: $breakpoint--sm) {
+  .col {
+    &-sm {
+      &-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// breakpoint xs
+@media (max-width: $breakpoint--xs) {
+  .align-items-start--xs {
+    -ms-flex-align: flex-start !important;
+    align-items: flex-start!important;
+  }
+}
