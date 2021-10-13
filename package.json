@@ -2,20 +2,44 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-real-favicon": "^0.3.2",
-    "gulp-ttf2woff": "^1.1.1"
+    "gulp-sass": "^3.2.1",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-util": "^3.0.8",
+    "sass": "^1.42.1"
   },
   "dependencies": {
     "4": "0.0.0",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "gulp-cli": "^2.3.0",
     "gulp-inject": "^4.3.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.0",
+    "gulp-terser": "^2.1.0",
     "gulp-ttf2eot": "^1.1.2",
     "minimatch": "^3.0.2",
     "nvm": "0.0.4",
     "path": "^0.12.7",
     "ttf2eot": "^2.0.0"
-  }
+  },
+  "name": "alexkk_portfolio",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexkruckkneip/alexkk_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexkruckkneip/alexkk_portfolio/issues"
+  },
+  "homepage": "https://github.com/alexkruckkneip/alexkk_portfolio#readme"
 }
