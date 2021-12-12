@@ -2,6 +2,9 @@
 // helpers
 // ---------- ---------- ---------- ---------- ----------
 
+// margin
+// ---------- ---------- ---------- ---------- ----------
+
 .ml-1 {margin-left: 4px!important;}
 .ml-2 {margin-left: 8px!important;}
 .ml-3 {margin-left: 16px!important;}
@@ -19,6 +22,14 @@
 .mt-3 {margin-top: 16px!important;}
 .mt-4 {margin-top: 24px!important;}
 .mt-5 {margin-top: 48px!important;}
+
+// hide
+// ---------- ---------- ---------- ---------- ----------
+
+// hide all
+.hide {
+  display: none;
+}
 
 // breakpoint md
 @media (max-width: $breakpoint--md) {
