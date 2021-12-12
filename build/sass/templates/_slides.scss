@@ -328,8 +328,8 @@
       &__area {
         h1 {
           color: $grey;
-          font-size: 16px;
-          line-height: 20px;
+          // font-size: 16px;
+          line-height: 0.8em;
 
           // @media (min-width: 1940px) {
           //   font-size: 1.6vh;
@@ -337,12 +337,12 @@
           // }
 
           span {
-            margin-left: 16px;
+            // margin-left: 16px;
+            display: block;
 
             @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
-              display: block;
               margin-left: 0;
-              margin-top: 16px;
+              // margin-top: 16px;
             }
           }
         }
