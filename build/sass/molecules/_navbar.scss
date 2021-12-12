@@ -82,7 +82,7 @@
       width: 24px;
     }
     &-bar {
-      background-color: $apple-green;
+      background-color: $color-primary;
       height: 2px;
       left: 2px;
       position: absolute;
@@ -188,7 +188,7 @@
           padding-right: 24px;
         }
         &--active {
-          color: $apple-green;
+          color: $color-primary;
         }
       }
     }

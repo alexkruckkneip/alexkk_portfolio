@@ -134,7 +134,7 @@ ul {
 
       a {
         text-decoration: none;
-        color: $apple-green;
+        color: $color-primary;
       }
 
       // @media (min-width: 1940px) {
@@ -159,8 +159,8 @@ a {
     &--purple-red {
       color: $purple-red;
     }
-    &--apple-green {
-      color: $apple-green;
+    &--color-primary {
+      color: $color-primary;
     }
     &--orange--dark {
       color: $orange--dark;
