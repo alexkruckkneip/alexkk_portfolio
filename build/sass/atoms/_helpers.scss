@@ -48,6 +48,13 @@
 // breakpoint xs
 @media (max-width: $breakpoint--xs) {
   .hide--xs {
-    display: none;
+    display: none !important;
+  }
+}
+
+// breakpoint xxs
+@media (max-width: $breakpoint--xxs) {
+  .hide--xxs {
+    display: none !important;
   }
 }
