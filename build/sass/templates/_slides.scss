@@ -460,8 +460,8 @@
       @media (min-width: $breakpoint--sm) {
         min-width: 420px;
       }
-      @media (max-width: $breakpoint--sm) {
-        max-width: none;
+      @media (max-width: $breakpoint--sm), (orientation: portrait) {
+        max-width: 420px;
       }
     }
 
