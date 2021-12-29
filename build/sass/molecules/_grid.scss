@@ -39,7 +39,7 @@
     max-width: 50%;
     padding: 0;
   }
-  @media (max-width: $breakpoint--xs) {
+  @media (max-width: $breakpoint--xs), (orientation: portrait) {
     max-width: calc(100vw - 48px);
   }
 }
@@ -86,7 +86,7 @@
 }
 
 // breakpoint xs
-@media (max-width: $breakpoint--xs) {
+@media (max-width: $breakpoint--xs), (orientation: portrait) {
   .align-items-start--xs {
     -ms-flex-align: flex-start !important;
     align-items: flex-start!important;

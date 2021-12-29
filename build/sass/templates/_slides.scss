@@ -26,7 +26,7 @@
       > .row {
         height: 100vh;
 
-        @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+        @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1), (orientation: portrait) {
           -ms-flex-direction: column!important;
           flex-direction: column!important;
         }

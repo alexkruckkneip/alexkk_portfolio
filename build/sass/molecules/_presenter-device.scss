@@ -8,7 +8,7 @@
     perspective: 50vh;
     width: 50vw;
 
-    @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+    @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1), (orientation: portrait) {
       height: 50vh;
       width: 100vw;
     }
