@@ -157,7 +157,7 @@
         margin-left: 0;
         margin-right: calc((50vw - (#{$content-width--lg} / 2)) * -1);
       }
-      @media (max-width: $breakpoint--md) {
+      @media (max-width: $breakpoint--md) and (orientation: landscape) {
         margin-left: 0;
         margin-right: calc((50vw - (#{$content-width--md} / 2)) * -1);
       }
@@ -178,7 +178,7 @@
 
         transition: transform 1s ease-in-out;
 
-        @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+        @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1), (orientation: portrait) {
           margin-left: -8vw;
         }
         &.visible {

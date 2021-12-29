@@ -114,7 +114,7 @@
       &__area {
 
         > .row {
-          @media (min-width: $breakpoint--xs) {
+          @media (min-width: $breakpoint--xs) and (orientation: landscape) {
             -ms-flex-direction: row-reverse!important;
             flex-direction: row-reverse!important;
           }
@@ -128,7 +128,7 @@
 
         > .row {
           > .col {
-            @media (min-width: $breakpoint--sm) {
+            @media (min-width: $breakpoint--sm) and (orientation: landscape)  {
               -webkit-box-pack: end !important;
               -ms-flex-pack: end !important;
               justify-content: flex-end !important;
