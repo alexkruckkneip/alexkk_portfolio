@@ -49,7 +49,10 @@
       width: 24vw;
 
       @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1), (orientation: portrait) {
-        width: 48%;
+        width: 40vw;
+      }
+      @media (min-width: $breakpoint--xs) and (orientation: portrait) {
+        width: 32vw;
       }
     }
   }
