@@ -12,6 +12,9 @@
       height: 50vh;
       width: 100vw;
     }
+    @media (min-width: $breakpoint--sm) and (orientation: portrait) {
+      height: 60vh;
+    }
   }
   &__body {
     animation: device__hover 4.8s;
