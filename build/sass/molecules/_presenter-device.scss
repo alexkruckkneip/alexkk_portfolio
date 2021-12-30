@@ -15,6 +15,7 @@
     @media (min-width: $breakpoint--xs) and (orientation: portrait) {
       height: 54vh;
       padding-top: 4vh;
+      margin-bottom: -4vh;
     }
   }
   &__body {
