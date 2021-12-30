@@ -463,6 +463,9 @@
       @media (max-width: $breakpoint--sm), (orientation: portrait) {
         max-width: 420px;
       }
+      @media (min-width: $breakpoint--xs) and (orientation: portrait) {
+        margin-left: 8vw;
+      }
     }
 
     &--01 {
