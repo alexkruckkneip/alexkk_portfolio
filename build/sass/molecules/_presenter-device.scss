@@ -12,8 +12,9 @@
       height: 50vh;
       width: 100vw;
     }
-    @media (min-width: $breakpoint--sm) and (orientation: portrait) {
-      height: 60vh;
+    @media (min-width: $breakpoint--xs) and (orientation: portrait) {
+      height: 54vh;
+      padding-top: 4vh;
     }
   }
   &__body {
