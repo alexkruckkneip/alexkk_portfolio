@@ -33,7 +33,7 @@
       }
       .button {
         &__scroll {
-          border-color: lighten($grey--dark, 8);
+          border-color: $color-primary;
           bottom: 64px;
           opacity: 0;
           position: fixed;
