@@ -9,7 +9,7 @@
   position: fixed;
   left: calc(50vw + 216px);
   top: calc(1048px - (2000px - 100vh) / 2);
-  z-index: 1;
+  z-index: 2;
 
   @media (min-width: 1940px) {
     left: 61vw;
