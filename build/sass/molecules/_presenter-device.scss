@@ -84,6 +84,15 @@
     position: absolute;
     right: 1vh;
   }
+  &__toolbar {
+    background-color: $color-primary;
+    bottom: 1.2vw;
+    display: block;
+    height: 5vw;
+    right: 1.2vw;
+    position: absolute;
+  }
+
   // helper classes {
   &__border--purple-red {
     border-color: $purple-red;
