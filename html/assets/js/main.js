@@ -156,6 +156,14 @@ $(window).scroll(function(event) {
 
 });
 
+// Full screen in example in devices
+
+$(function() {
+  $("button.button__zoom").click(function() {
+    $(this).closest(".device__body").toggleClass("device__zoom--full");
+ });
+});
+
 
 // ---------- ---------- ---------- ---------- ----------
 // Open Menu
