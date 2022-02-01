@@ -107,16 +107,34 @@
       right: 1.6vw;
       width: 4.8vw;
 
-        &__row {
-          display: block;
+      .button__icon {
+        // background-color: green;
+        display: block;
+        height: 2.4vw;
+        position: absolute;
+        width: 2.4vw;
 
-          .button__icon {
-            display: inline-block;
-            height: 2.4vw;
-            position: absolute;
-            width: 2.4vw;
+        svg {
+          height: 2.4vw;
+          display: block;
+          width: 2.4vw;
+        }
+
+        &--top {
+          right: 0;
+          top: 0;
+        }
+        &--bottom {
+          bottom: 0;
+          left: 0;
+
+          svg {
+            transform:          rotate(180deg);
+            -webkit-transform:  rotate(180deg);
           }
         }
+      }
+
     }
   }
 
