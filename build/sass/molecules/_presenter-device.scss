@@ -98,16 +98,24 @@
 
     .button {
       background-color: rgba($grey--darker, 0.64);
-      bottom: 2vw;
+      border-radius: 0;
+      bottom: 1.6vw;
       display: inline-block;
       height: 4.8vw;
       padding: 0;
       position: absolute;
-      right: 2vw;
+      right: 1.6vw;
       width: 4.8vw;
 
         &__row {
           display: block;
+
+          .button__icon {
+            display: inline-block;
+            height: 2.4vw;
+            position: absolute;
+            width: 2.4vw;
+          }
         }
     }
   }
