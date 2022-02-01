@@ -85,12 +85,31 @@
     right: 1vh;
   }
   &__toolbar {
-    background-color: $color-primary;
-    bottom: 1.2vw;
     display: block;
-    height: 5vw;
-    right: 1.2vw;
-    position: absolute;
+
+    &__icon {
+      fill: none;
+      height: 1.6vw;
+      stroke: $color-primary;
+      stroke-width: 1;
+      stroke-linecap: round;
+      width: 1.6vw;
+    }
+
+    .button {
+      background-color: rgba($grey--darker, 0.64);
+      bottom: 2vw;
+      display: inline-block;
+      height: 4.8vw;
+      padding: 0;
+      position: absolute;
+      right: 2vw;
+      width: 4.8vw;
+
+        &__row {
+          display: block;
+        }
+    }
   }
 
   // helper classes {
