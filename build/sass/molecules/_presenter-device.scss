@@ -84,6 +84,9 @@
     position: absolute;
     right: 1vh;
   }
+
+  $toolbar--value: 0.8;
+
   &__toolbar {
     display: block;
 
@@ -98,14 +101,14 @@
 
     .button {
       background-color: rgba($grey--darker, 0.64);
-      border-radius: 0;
-      bottom: 1.6vw;
+      // border-radius: 0;
+      bottom: calc($toolbar--value * 2)vw;
       display: inline-block;
-      height: 4.8vw;
+      height: 5.2vw;
       padding: 0;
       position: absolute;
-      right: 1.6vw;
-      width: 4.8vw;
+      right: calc($toolbar--value * 2);
+      width: 5.2vw;
 
       .button__icon {
         // background-color: green;
@@ -114,6 +117,7 @@
         position: absolute;
         width: 2.4vw;
 
+
         svg {
           height: 2.4vw;
           display: block;
@@ -121,12 +125,12 @@
         }
 
         &--top {
-          right: 0;
-          top: 0;
+          right: 0.6vw;
+          top: 0.6vw;
         }
         &--bottom {
-          bottom: 0;
-          left: 0;
+          bottom: 0.6vw;
+          left: 0.6vw;
 
           svg {
             transform:          rotate(180deg);
