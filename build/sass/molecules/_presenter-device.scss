@@ -85,52 +85,52 @@
     right: 1vh;
   }
 
-  $toolbar--value: 0.8;
+  $toolbar--value: 0.8vw;
 
   &__toolbar {
     display: block;
 
     &__icon {
       fill: none;
-      height: 1.6vw;
-      stroke: $color-primary;
-      stroke-width: 1;
-      stroke-linecap: round;
-      width: 1.6vw;
+      height: calc(#{$toolbar--value} * 1.2);
+      width: calc(#{$toolbar--value} * 1.2);
     }
 
     .button {
       background-color: rgba($grey--darker, 0.64);
-      // border-radius: 0;
-      bottom: calc($toolbar--value * 2)vw;
+      border-radius: calc(#{$toolbar--value} * 4);
+      bottom: calc(#{$toolbar--value} * 2);
       display: inline-block;
-      height: 5.2vw;
+      height: calc(#{$toolbar--value} * 4);
       padding: 0;
       position: absolute;
-      right: calc($toolbar--value * 2);
-      width: 5.2vw;
+      right: calc(#{$toolbar--value} * 2);
+      width: calc(#{$toolbar--value} * 4);
 
       .button__icon {
         // background-color: green;
         display: block;
-        height: 2.4vw;
+        height: calc(#{$toolbar--value} * 1.2);
         position: absolute;
-        width: 2.4vw;
+        width: calc(#{$toolbar--value} * 1.2);
 
 
         svg {
-          height: 2.4vw;
+          height: calc(#{$toolbar--value} * 1.2);
           display: block;
-          width: 2.4vw;
+          width: calc(#{$toolbar--value} * 1.2);
+          stroke: $color-primary;
+          stroke-width: 3;
+          stroke-linecap: round;
         }
 
         &--top {
-          right: 0.6vw;
-          top: 0.6vw;
+          right: $toolbar--value;
+          top: $toolbar--value;
         }
         &--bottom {
-          bottom: 0.6vw;
-          left: 0.6vw;
+          bottom: $toolbar--value;
+          left: $toolbar--value;
 
           svg {
             transform:          rotate(180deg);
