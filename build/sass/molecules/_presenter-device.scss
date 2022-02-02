@@ -98,10 +98,6 @@
   &__border--sand {
     border-color: $sand;
   }
-
-  &__toolbar {
-    display: none;
-  }
 }
 
 
@@ -135,12 +131,15 @@
 
         &__body {
           margin-left: 4.8vw;
+          left: 0;
 
           transform:          rotateY(0deg);
           -webkit-transform:  rotateY(0deg);
           transform-style: flat;
 
-          transition: transform 1s ease-in-out, margin-left 1s ease-in-out;
+          transition: transform 1s ease-in-out,
+                      margin-left 1s ease-in-out,
+                      left 1s ease-in-out;
 
           &.visible {
             transform:          rotateY(10deg);
@@ -153,6 +152,11 @@
             transform-style: flat;
             transform:          scale(1.4);
             margin-left: 0;
+
+            &.device__zoom--full {
+              left: 25vw;
+              transform: scale(2.2);
+            }
           }
         }
       }
@@ -218,12 +222,15 @@
 // ----------
 
 @media (orientation: landscape) {
-  .device__body:hover {
 
-    $toolbar--value: 0.8vw;
+  $toolbar--value: 0.8vw;
+
+  .device__body {
 
     .device__toolbar {
       display: block;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
 
       &__icon {
         fill: none;
@@ -234,12 +241,13 @@
       .button {
         background-color: rgba($grey--darker, 0.64);
         border-radius: calc(#{$toolbar--value} * 4);
-        bottom: calc(#{$toolbar--value} * 2);
+        bottom: calc(#{$toolbar--value} * 4);
         display: inline-block;
         height: calc(#{$toolbar--value} * 4);
         padding: 0;
         position: absolute;
         right: calc(#{$toolbar--value} * 2);
+        transition: bottom 1s ease-in-out;
         width: calc(#{$toolbar--value} * 4);
 
         .button__icon {
@@ -275,15 +283,15 @@
         }
       }
     }
-  }
-}
+    &:hover {
+      .device__toolbar {
+        display: block;
+        opacity: 1;
 
-.slide .device__wrapper .device__body.device__zoom--full:hover {
-  left: 0;
-  margin-left: -51vw;
-  position: fixed;
-  top: 0;
-  transform: scale(1);
-  width: 100vw;
-  z-index: 3;
+        .button {
+          bottom: calc(#{$toolbar--value} * 2);
+        }
+      }
+    }
+  }
 }
