@@ -98,6 +98,10 @@
   &__border--sand {
     border-color: $sand;
   }
+
+  &__toolbar {
+    display: none;
+  }
 }
 
 
@@ -152,11 +156,11 @@
             transform-style: flat;
             transform:          scale(1.4);
             margin-left: 0;
+          }
 
-            &.device__zoom--full {
-              left: 25vw;
-              transform: scale(2.2);
-            }
+          &.device__zoom--full {
+            left: 16vw;
+            transform: scale(2);
           }
         }
       }
@@ -189,12 +193,15 @@
       }
       .device__body {
         margin-right: 4.8vw;
+        right: 0;
 
         transform:          rotateY(0deg);
         -webkit-transform:  rotateY(0deg);
         transform-style: flat;
 
-        transition: transform 1s ease-in-out;
+        transition: transform 1s ease-in-out,
+                    margin-left 1s ease-in-out,
+                    right 1s ease-in-out;
 
         @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1), (orientation: portrait) {
           margin-left: -8vw;
@@ -209,7 +216,11 @@
           -webkit-transform:  rotateY(0deg);
           transform-style: flat;
           transform:          scale(1.4);
+        }
 
+        &.device__zoom--full {
+          right: 16vw;
+          transform: scale(2);
         }
       }
     }
