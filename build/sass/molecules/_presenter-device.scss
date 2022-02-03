@@ -56,6 +56,16 @@
         width: 32vw;
       }
     }
+    &.device__zoom--full {
+      .device__toolbar {
+        display: block;
+        opacity: 1;
+
+        .button {
+           bottom: calc(#{$toolbar--value} * 2);
+        }
+      }
+    }
   }
   &__display {
     background-color: $grey--darker;
@@ -160,7 +170,7 @@
 
           &.device__zoom--full {
             left: 16vw;
-            transform: scale(2);
+            transform: scale(2.2);
           }
         }
       }
@@ -233,8 +243,7 @@
 // ----------
 
 @media (orientation: landscape) {
-
-  $toolbar--value: 0.8vw;
+                                 
 
   .device__body {
 
