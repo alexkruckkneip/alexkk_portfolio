@@ -271,10 +271,12 @@ $toolbar--value: 0.4vw;
         padding: 0;
         position: absolute;
         right: calc(#{$toolbar--value} * 4);
-        transition: bottom 1s ease-in-out;
+        transition: bottom 1s ease-in-out, transform 0.64s ease-in-out;
         width: calc(#{$toolbar--value} * 4);
 
-        
+        &:hover {
+          transform:          scale(1.2);
+        }
 
         .button__icon {
           // background-color: green;
