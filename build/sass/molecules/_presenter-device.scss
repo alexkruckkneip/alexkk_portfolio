@@ -116,21 +116,6 @@ $toolbar--value: 0.4vw;
 
         .button {
           bottom: calc(#{$toolbar--value} * 4);
-
-          .button__icon {
-            &--top {
-              svg {
-                transform:          rotate(180deg);
-                -webkit-transform:  rotate(180deg);
-              }
-            }
-            &--bottom {
-              svg {
-                transform:          rotate(0deg);
-                -webkit-transform:  rotate(0deg);
-              }
-            }
-          }
         }
       }
     }
@@ -284,14 +269,15 @@ $toolbar--value: 0.4vw;
 
       &__icon {
         fill: none;
-        height: calc(#{$toolbar--value} * 1.6);
-        width: calc(#{$toolbar--value} * 1.6);
+        height: calc(#{$toolbar--value} * 1.4);
+        width: calc(#{$toolbar--value} * 1.4);
       }
 
       .button {
         // background-color: rgba($grey--darker, 0.64);
         background-color: green;
-        border-radius: calc(#{$toolbar--value} * 4);
+        // border-radius: calc(#{$toolbar--value} * 4);
+        border-radius: 0;
         bottom: calc(#{$toolbar--value} * 6);
         display: inline-block;
         height: calc(#{$toolbar--value} * 4);
@@ -306,38 +292,36 @@ $toolbar--value: 0.4vw;
         }
 
         .button__icon {
-          // background-color: green;
+          background-color: black;
           display: block;
-          height: calc(#{$toolbar--value} * 1.6);
+          height: calc(#{$toolbar--value} * 2);
           position: absolute;
-          width: calc(#{$toolbar--value} * 1.6);
-
+          width: calc(#{$toolbar--value} * 2);
 
           svg {
             display: block;
+            height: calc(#{$toolbar--value} * 2);
             stroke: $color-primary;
             stroke-width: 2;
             stroke-linecap: round;
             transition: transform 1s ease-in-out;
+            width: calc(#{$toolbar--value} * 2);
           }
 
           &--top {
-            right: calc(#{$toolbar--value} * 0.5);
-            top: calc(#{$toolbar--value} * 0.5);
+            right: calc(#{$toolbar--value} * 0);
+            top: calc(#{$toolbar--value} * 0);
 
-            svg {
-              transform:          rotate(0deg);
-              -webkit-transform:  rotate(0deg);
-            }
+            transform:          rotate(0deg);
+            -webkit-transform:  rotate(0deg);
           }
           &--bottom {
-            bottom: calc(#{$toolbar--value} * 0.5);
-            left: calc(#{$toolbar--value} * 0.5);
+            background-color: LightSlateGray;
+            bottom: calc(#{$toolbar--value} * 0);
+            left: calc(#{$toolbar--value} * 0);
 
-            svg {
-              transform:          rotate(180deg);
-              -webkit-transform:  rotate(180deg);
-            }
+            transform:          rotate(180deg);
+            -webkit-transform:  rotate(180deg);
           }
         }
       }
