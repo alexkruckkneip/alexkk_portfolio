@@ -274,16 +274,17 @@ $toolbar--value: 0.4vw;
       }
 
       .button {
-        // background-color: rgba($grey--darker, 0.64);
-        background-color: green;
-        // border-radius: calc(#{$toolbar--value} * 4);
-        border-radius: 0;
+        background-color: rgba($grey--darker, 0.64);
+        // background-color: green;
+        border-radius: calc(#{$toolbar--value} * 4);
+        // border-radius: 0;
         bottom: calc(#{$toolbar--value} * 6);
         display: inline-block;
         height: calc(#{$toolbar--value} * 4);
         padding: 0;
         position: absolute;
         right: calc(#{$toolbar--value} * 4);
+        transform: scale(1);
         transition: bottom 1s ease-in-out, transform 0.64s ease-in-out;
         width: calc(#{$toolbar--value} * 4);
 
@@ -292,43 +293,41 @@ $toolbar--value: 0.4vw;
         }
 
         .button__icon {
-          background-color: black;
           display: block;
-          height: calc(#{$toolbar--value} * 2);
+          height: calc(#{$toolbar--value} * 1.4);
           position: absolute;
-          width: calc(#{$toolbar--value} * 2);
+          width: calc(#{$toolbar--value} * 1.4);
+          transition: top 0.64s ease-in-out,
+                      right 0.64s ease-in-out,
+                      bottom 0.64s ease-in-out,
+                      left 0.64s ease-in-out,
+                      transform 0.64s ease-in-out;
 
           svg {
             display: block;
-            height: calc(#{$toolbar--value} * 2);
+            height: calc(#{$toolbar--value} * 1.4);
             stroke: $color-primary;
             stroke-width: 2;
             stroke-linecap: round;
             transition: transform 1s ease-in-out;
-            width: calc(#{$toolbar--value} * 2);
+            width: calc(#{$toolbar--value} * 1.4);
           }
 
           &--top {
-            right: calc(#{$toolbar--value} * 0);
-            top: calc(#{$toolbar--value} * 0);
+            // background-color: black;
+            right: calc(#{$toolbar--value} * 0.8);
+            top: calc(#{$toolbar--value} * 0.8);
 
             transform:          rotate(0deg);
             -webkit-transform:  rotate(0deg);
           }
           &--bottom {
-            background-color: LightSlateGray;
-            bottom: calc(#{$toolbar--value} * 0);
-            left: calc(#{$toolbar--value} * 0);
+            // background-color: LightSlateGray;
+            bottom: calc(#{$toolbar--value} * 0.8);
+            left: calc(#{$toolbar--value} * 0.8);
 
             transform:          rotate(180deg);
             -webkit-transform:  rotate(180deg);
-          }
-        }
-      }
-      &.device__zoom--full {
-        .device__toolbar {
-          .button {
-            bottom: calc(#{$toolbar--value} * 4);
           }
         }
       }
@@ -340,6 +339,30 @@ $toolbar--value: 0.4vw;
 
         .button {
           bottom: calc(#{$toolbar--value} * 4);
+        }
+      }
+      &.device__zoom--full {
+        .device__toolbar {
+          .button {
+            transform: scale(0.8);
+
+            .button__icon {
+              &--top {
+                right: calc(#{$toolbar--value} * 0.5);
+                top: calc(#{$toolbar--value} * 0.5);
+
+                transform:          rotate(180deg);
+                -webkit-transform:  rotate(180deg);
+              }
+              &--bottom {
+                bottom: calc(#{$toolbar--value} * 0.5);
+                left: calc(#{$toolbar--value} * 0.5);
+
+                transform:          rotate(0deg);
+                -webkit-transform:  rotate(0deg);
+              }
+            }
+          }
         }
       }
     }
