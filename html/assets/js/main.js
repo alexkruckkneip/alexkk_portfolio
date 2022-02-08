@@ -140,7 +140,7 @@ $(window).scroll(function(event) {
     if (el.visible(true)) {
       el.addClass("visible");
     } else {
-      el.removeClass("visible");
+      el.removeClass("visible device__zoom--full");
     }
   });
 
