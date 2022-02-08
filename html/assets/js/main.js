@@ -140,7 +140,7 @@ $(window).scroll(function(event) {
     if (el.visible(true)) {
       el.addClass("visible");
     } else {
-      el.removeClass("visible device__zoom--full");
+      el.removeClass("visible");
     }
   });
 
@@ -160,7 +160,7 @@ $(window).scroll(function(event) {
 
 $(function() {
   $("button.button__full-screen").click(function() {
-    $(this).closest(".device__body").toggleClass("device__zoom--full");
+    $(".device__body").toggleClass("device__zoom--full");
  });
 });
 
