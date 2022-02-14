@@ -3,3 +3,4 @@ node_modules/
 html/assets/css/style.css
 package-lock.json
 npm-shrinkwrap.json
+npm-debug.log
