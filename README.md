@@ -23,21 +23,4 @@ With a special focus on design assests, this setup includes a Gulp task that can
 This system is open to use all GULP tasks for web development.
 
 ### Disadvantages of the set up ###
-This setup requires a quite old version of node v8.17.0 and npm v6.13.4.
-
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+This setup requires a quite old version of node v8.17.0 and npm v6.13.4. I recommend to also have NVM (Node Version Manager) ready to switch the versions to allow project using a newer node version to run properly.
