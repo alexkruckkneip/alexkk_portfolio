@@ -1,12 +1,13 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This repository hosts my private portfolio web application.
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Version 2.0
+
+When looking for a new job, recruiters would like to understand what projects I worked on as a designer and what value my work brought to the projects. When they get my CV, under the most important career steps they can find a link to a related project page of my portfolio. This helps them to dive deeper and find further information they need to make a decision on either hiring me or not.
 
 ### How do I get set up? ###
 
