@@ -102,3 +102,45 @@
     top: calc(100% + 4vh);
   }
 }
+
+
+
+// device hover stop
+// ---------- ---------- ---------- ---------- ----------
+
+@keyframes device__hover--stop  {
+  0% {
+    margin-top: -8vh;
+  }
+  50% {
+    margin-top: -8vh;
+  }
+  100% {
+    margin-top: -8vh;
+  }
+}
+
+@keyframes device__hover--mobile-stop  {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+@keyframes device__shadow-stop  {
+  0% {
+    top: calc(100% + 6vh);
+  }
+  50% {
+    top: calc(100% + 6vh);
+  }
+  100% {
+    top: calc(100% + 6vh);
+  }
+}

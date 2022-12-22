@@ -89,7 +89,21 @@ $toolbar--value: 0.4vw;
     position: absolute;
     right: 1vh;
   }
-
+  &__body:hover {
+    animation: device__hover--stop 4.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+      animation: device__hover--mobile-stop 4.8s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    .device__shadow {
+      animation: device__shadow--stop 4.8s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+  }
   // helper classes {
   &__border--purple-red {
     border-color: $purple-red;
