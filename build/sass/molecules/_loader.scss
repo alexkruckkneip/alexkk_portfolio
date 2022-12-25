@@ -115,9 +115,23 @@
               margin-top: calc((((2000px - 100vh) / 2 ) * -1));
               margin-left: calc((((2000px - 100vw) / 2 ) * -1));
 
-              @media (min-width: 1940px) {
-                margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 0vh);
-                margin-left: -2vw;
+              @media (min-width: 3100px) {
+                height: 4800px;
+                width: 4800px;
+                margin-top: calc(((4800px - 100vh) / 2 ) * -1);
+                margin-left: calc(((4800px - 100vw) / 2 ) * -1);
+              }
+              @media (max-width: 3100px) {
+                height: 3200px;
+                width: 3200px;
+                margin-top: calc(((3200px - 100vh) / 2 ) * -1);
+                margin-left: calc(((3200px - 100vw) / 2 ) * -1);
+              }
+              @media (max-width: 1940px) {
+                height: 2000px;
+                width: 2000px;
+                margin-top: calc(((2000px - 100vh) / 2 ) * -1);
+                margin-left: calc(((2000px - 100vw) / 2 ) * -1);
               }
               @media (max-width: 1000px) {
                 margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
