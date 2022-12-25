@@ -254,11 +254,6 @@
               fill: url(#svg-gradiant--grey-dark) #4E5457;
               stroke: $color-primary;
               stroke-width: 1;
-
-              @media (min-width: 1940px) {
-                height: 104vw;
-                width: 104vw;
-              }
             }
           }
 

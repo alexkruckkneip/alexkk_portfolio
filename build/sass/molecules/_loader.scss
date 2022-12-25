@@ -112,8 +112,6 @@
           &--top {
             svg {
               opacity: 1;
-              margin-top: calc((((2000px - 100vh) / 2 ) * -1));
-              margin-left: calc((((2000px - 100vw) / 2 ) * -1));
 
               @media (min-width: 3100px) {
                 height: 4800px;
