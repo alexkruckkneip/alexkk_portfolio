@@ -237,11 +237,11 @@
           width: 100vw;
 
           svg {
-            height: 2000px;
-            margin-top: calc(((2000px - 100vh) / 2 ) * -1);
-            margin-left: calc(((2000px - 100vw) / 2 ) * -1);
+            height: $gate--hd;
+            margin-top: calc(((#{$gate--hd} - 100vh) / 2 ) * -1);
+            margin-left: calc(((#{$gate--hd} - 100vw) / 2 ) * -1);
             // margin-left: 0;
-            width: 2000px;
+            width: $gate--hd;
             position: fixed;
             z-index: 1;
           }
@@ -256,8 +256,8 @@
               stroke-width: 1;
 
               @media (min-width: 1940px) {
-                height: 104vw;
-                width: 104vw;
+                height: calc(2000px * 2);
+                width: calc(2000px * 2);
               }
             }
           }

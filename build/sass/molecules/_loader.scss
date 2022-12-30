@@ -7,33 +7,29 @@
 .loader {
   opacity: 1;
   position: fixed;
-  left: calc(50vw + 216px);
-  top: calc(1048px - (2000px - 100vh) / 2);
+  left: calc(50vw + 226px);
+  top: calc(1080px - (#{$gate--hd} - 100vh) / 2);
   z-index: 2;
 
-  @media (min-width: 1940px) {
-    left: 61vw;
-    top: 56vh;
-  }
   @media (max-width: 1000px) {
-    left: calc(50vw + 136px);
-    top: calc(968px - (2000px - 100vh) / 2);
+    left: calc(50vw + 168px);
+    top: calc(1032px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: 820px) {
-    left: calc(50vw + 36px);
-    top: calc(928px - (2000px - 100vh) / 2);
+    left: calc(50vw + 68px);
+    top: calc(968px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: 1000px) and (max-aspect-ratio: 1/1) {
-    left: calc(50vw + 136px);
-    top: calc(968px - (2000px - 100vh) / 2);
+    left: calc(50vw + 168px);
+    top: calc(1064px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
-    left: calc(50vw + 36px);
-    top: calc(968px - (2000px - 100vh) / 2);
+    left: calc(50vw + 68px);
+    top: calc(1024px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
-    left: calc(50vw + 8px);
-    top: calc(1008px - (2000px - 100vh) / 2);
+    left: calc(50vw + 42px);
+    top: calc(1048px - (#{$gate--hd} - 100vh) / 2);
   }
 
   &__wrapper {
@@ -112,8 +108,8 @@
           &--top {
             svg {
               opacity: 1;
-              margin-top: calc((((2000px - 100vh) / 2 ) * -1));
-              margin-left: calc((((2000px - 100vw) / 2 ) * -1));
+              margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1));
+              margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1));
 
               @media (min-width: 1940px) {
                 margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 0vh);
