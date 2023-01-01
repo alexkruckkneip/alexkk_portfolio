@@ -310,12 +310,12 @@
                 margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1));
 
                 @media (max-width: $breakpoint--lg) {
-                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 120px);
-                  margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 68px);
+                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 88px);
+                  margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 72px);
                 }
                 @media (max-width: $breakpoint--md) {
-                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 120px);
-                  margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 68px);
+                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 88px);
+                  margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 72px);
                 }
                 @media (max-width: $breakpoint--sm) {
                   margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 144px);
