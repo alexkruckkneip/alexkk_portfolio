@@ -266,20 +266,22 @@
           top: calc(50vh - 32px);
         }
         @media (max-width: $breakpoint--md) {
-          top: calc(50vh + -40px);
+          top: calc(50vh + -56px);
         }
         @media (max-width: $breakpoint--sm) {
-          top: calc(50vh - 52px);
+          top: calc(50vh - 88px);
         }
         @media (max-width: $breakpoint--lg) and (max-aspect-ratio: 1/1) {
           top: calc(50vh + 32px);
         }
         @media (max-width: $breakpoint--md) and (max-aspect-ratio: 1/1) {
+          top: 50vh;
         }
         @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
+          top: calc(50vh - 64px);
         }
         @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
-          top: calc(50vh - 32px);
+          top: calc(50vh - 72px);
         }
       }
       &__area {
