@@ -287,7 +287,7 @@
                   margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 40px);
                 }
                 @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
-                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 160px);
+                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 144px);
                 }
                 @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
                   margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 196px);
@@ -317,7 +317,7 @@
                   margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 40px);
                 }
                 @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
-                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 80px);
+                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 96px);
                 }
                 @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
                   margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 120px);
