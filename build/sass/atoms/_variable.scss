@@ -6,6 +6,7 @@
 // breakpoints
 // ---------- ---------- ---------- ---------- ----------
 
+$breakpoint--4k: 1921px;
 $breakpoint--lg: 1920px;
 $breakpoint--md: 1000px;
 $breakpoint--sm: 820px;
@@ -26,6 +27,6 @@ $content-width--xs: calc(100vw - 48px);
 // loading animation gate
 // ---------- ---------- ---------- ---------- ----------
 
-$gate--hd: 2048px;
+$gate--hd: 2096px;
 $gate--4k: 4096px;
 $gate--8k: 8192px;

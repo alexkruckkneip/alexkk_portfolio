@@ -219,6 +219,12 @@
             width: $gate--hd;
             position: fixed;
             z-index: 1;
+
+            @media (min-width: $breakpoint--4k) {
+                height: $gate--4k;
+                width: $gate--4k;
+            }
+
           }
 
           // gate top
@@ -229,11 +235,6 @@
               fill: url(#svg-gradiant--grey-dark) #4E5457;
               stroke: $color-primary;
               stroke-width: 1;
-
-              @media (min-width: 1940px) {
-                height: calc(#{$gate--hd} * 2);
-                width: calc(#{$gate--hd} * 2);
-              }
             }
           }
 
