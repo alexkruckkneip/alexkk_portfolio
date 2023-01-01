@@ -20,8 +20,8 @@
     top: calc(968px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: $breakpoint--md) and (max-aspect-ratio: 1/1) {
-    left: calc(50vw + 168px);
-    top: calc(1064px - (#{$gate--hd} - 100vh) / 2);
+    left: calc(50vw + 144px);
+    top: calc(1048px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
     left: calc(50vw + 44px);
@@ -144,9 +144,9 @@
               margin-top: calc(((#{$gate--hd} - 100vh) / 2 ) * -1);
               margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) + 12px);
 
-              @media (min-width: $breakpoint--lg) {
-                margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 0vh);
-                margin-left: -2vw;
+              @media (max-width: $breakpoint--lg) {
+                margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1));
+                margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1));
               }
               @media (max-width: $breakpoint--md) {
                 margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 80px);
