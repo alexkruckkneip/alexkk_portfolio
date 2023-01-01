@@ -24,12 +24,12 @@
     top: calc(1064px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
-    left: calc(50vw + 68px);
-    top: calc(1024px - (#{$gate--hd} - 100vh) / 2);
+    left: calc(50vw + 44px);
+    top: calc(996px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
-    left: calc(50vw + 42px);
-    top: calc(1048px - (#{$gate--hd} - 100vh) / 2);
+    left: calc(50vw + 16px);
+    top: calc(1024px - (#{$gate--hd} - 100vh) / 2);
   }
 
   &__wrapper {
@@ -256,7 +256,7 @@
                   margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 40px);
                 }
                 @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
-                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 120px);
+                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 160px);
                 }
                 @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
                   margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 196px);
@@ -270,8 +270,9 @@
             &--bottom {
               svg {
                 margin-top: calc(((#{$gate--hd} - 100vh) / 2 ) * -1);
+                margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) + 12px);
 
-                @media (min-width: $breakpoint--lg) {
+                @media (max-width: $breakpoint--lg) {
                   margin-top: calc((((104vw - 100vh) / 2 ) * -1));
                 }
                 @media (max-aspect-ratio: 1/1) and (min-width: $breakpoint--lg) {
@@ -287,10 +288,10 @@
                   margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1));
                 }
                 @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
-                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 80px);
+                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 128px);
                 }
                 @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
-
+                  margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 160px);
                 }
               }
             }
