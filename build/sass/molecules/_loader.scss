@@ -12,11 +12,11 @@
   z-index: 2;
 
   @media (max-width: $breakpoint--md) {
-    left: calc(50vw + 168px);
-    top: calc(1032px - (#{$gate--hd} - 100vh) / 2);
+    left: calc(50vw + 144px);
+    top: calc(996px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: $breakpoint--sm) {
-    left: calc(50vw + 68px);
+    left: calc(50vw + 48px);
     top: calc(968px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: $breakpoint--md) and (max-aspect-ratio: 1/1) {
@@ -24,7 +24,7 @@
     top: calc(1048px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
-    left: calc(50vw + 44px);
+    left: calc(50vw + 16px);
     top: calc(996px - (#{$gate--hd} - 100vh) / 2);
   }
   @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
@@ -118,12 +118,12 @@
                 margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 80px);
               }
               @media (max-width: $breakpoint--sm) {
-                margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 140px);
+                margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 112px);
                 margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 180px);
               }
               @media (max-width: $breakpoint--md) and (max-aspect-ratio: 1/1) {
                 margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 40px);
-                margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 208px);
+                margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 80px);
               }
               @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
                 margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 80px);
@@ -152,12 +152,12 @@
                 margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 80px);
               }
               @media (max-width: $breakpoint--sm) {
-                margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 140px);
+                margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 112px);
                 margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 180px);
               }
               @media (max-width: $breakpoint--md) and (max-aspect-ratio: 1/1) {
                 margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 40px);
-                margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 208px);
+                margin-left: calc((((#{$gate--hd} - 100vw) / 2 ) * -1) - 80px);
               }
               @media (max-width: $breakpoint--sm) and (max-aspect-ratio: 1/1) {
                 margin-top: calc((((#{$gate--hd} - 100vh) / 2 ) * -1) - 80px);
