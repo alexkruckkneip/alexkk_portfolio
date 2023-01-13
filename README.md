@@ -1,4 +1,4 @@
-# README - Portfolio AlexKK #
+# README - Portfolio Alexander KK #
 
 **This repository hosts my private portfolio web application.**
 
