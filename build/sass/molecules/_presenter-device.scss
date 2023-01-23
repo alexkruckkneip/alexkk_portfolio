@@ -33,7 +33,7 @@ $toolbar--value: 0.4vw;
       animation-iteration-count: infinite;
     }
 
-    background: linear-gradient(48deg, $grey--darker, $grey--dark);
+    background: linear-gradient(48deg, $grey-900, $grey-800);
     border: 1px solid $grey;
     border-radius: 1.2vh;
     display: inline-block;
@@ -63,9 +63,9 @@ $toolbar--value: 0.4vw;
     }
   }
   &__display {
-    background-color: $grey--darker;
+    background-color: $grey-900;
     border-radius: 0.32vh;
-    box-shadow: 0 0 8px 0 rgba($grey--darker, 0.2);
+    box-shadow: 0 0 8px 0 rgba($grey-900, 0.2);
     margin-top: -2px;
     overflow: hidden;
     padding: 0.2vh;
@@ -81,8 +81,8 @@ $toolbar--value: 0.4vw;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 
-    background-color:rgba($grey--darker, 0.24);
-    box-shadow: 0 0 2vh 1vh rgba($grey--darker, 0.24);
+    background-color:rgba($grey-900, 0.24);
+    box-shadow: 0 0 2vh 1vh rgba($grey-900, 0.24);
     border-radius: 50%;
     height: 1px;
     left: 1vh;
@@ -288,7 +288,7 @@ $toolbar--value: 0.4vw;
       }
 
       .button {
-        background-color: rgba($grey--darker, 0.64);
+        background-color: rgba($grey-900, 0.64);
         // background-color: green;
         border-radius: calc(#{$toolbar--value} * 4);
         // border-radius: 0;

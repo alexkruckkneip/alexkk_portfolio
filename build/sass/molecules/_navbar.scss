@@ -22,8 +22,8 @@
 
   .navbar__bg {
     svg {
-      fill: rgba($grey--dark, 0.48);
-      stroke: $grey--dark;
+      fill: rgba($grey-800, 0.48);
+      stroke: $grey-800;
       stroke-width: 1;
       position: fixed;
       top: -50px;
@@ -47,7 +47,7 @@
     display: none;
 
     @media (max-width: $breakpoint--sm) {
-      background-color: rgba($grey--darker, 0.64);
+      background-color: rgba($grey-900, 0.64);
       display: block;
       left: -34vw;
       height: 100vh;
@@ -128,7 +128,7 @@
     z-index: 3;
 
     @media (max-width: $breakpoint--sm) {
-      background-color: $grey--darker;
+      background-color: $grey-900;
       height: 100vh;
       right: -66vw;
       position: fixed;

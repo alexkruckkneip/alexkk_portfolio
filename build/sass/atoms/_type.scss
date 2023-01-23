@@ -88,7 +88,7 @@ h1 {
 p, li {
   font-size: 16px;
   font-family: 'roboto_slab', serif;
-  color: $grey--lighter;
+  color: $grey-300;
   // @media (min-width: 1940px) {
   //   font-size: 1.6vh;
   // }
@@ -169,7 +169,7 @@ a {
       color: $orange--dark;
     }
     &--dark {
-      color: $grey--darker;
+      color: $grey-900;
     }
     &--grey {
       color: $grey;

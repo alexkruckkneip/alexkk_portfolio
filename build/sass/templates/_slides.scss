@@ -14,10 +14,10 @@
   width: 100vw;
 
   &:nth-child(2n+1) {
-    background: linear-gradient(135deg, $grey--darker, $grey--dark);
+    background: linear-gradient(135deg, $grey-900, $grey-800);
   }
   &:nth-child(2n) {
-    background: linear-gradient(45deg, $grey--darker, $grey--dark);
+    background: linear-gradient(45deg, $grey-900, $grey-800);
   }
 
   .content {
@@ -388,30 +388,30 @@
   &--orange--dark {
     .slide {
       &:nth-child(2n+1) {
-        background: linear-gradient(135deg, $orange--dark -48%, $grey--dark 24%, $grey--darker);
+        background: linear-gradient(135deg, $orange--dark -48%, $grey-800 24%, $grey-900);
       }
       &:nth-child(2n) {
-        background: linear-gradient(45deg, $orange--dark -48%, $grey--dark 24%, $grey--darker);
+        background: linear-gradient(45deg, $orange--dark -48%, $grey-800 24%, $grey-900);
       }
     }
   }
   &--color-primary {
     .slide {
       &:nth-child(2n+1) {
-        background: linear-gradient(135deg, $color-primary -48%, $grey--dark 24%, $grey--darker);
+        background: linear-gradient(135deg, $color-primary -48%, $grey-800 24%, $grey-900);
       }
       &:nth-child(2n) {
-        background: linear-gradient(45deg, $color-primary -48%, $grey--dark 24%, $grey--darker);
+        background: linear-gradient(45deg, $color-primary -48%, $grey-800 24%, $grey-900);
       }
     }
   }
   &--sand {
     .slide {
       &:nth-child(2n+1) {
-        background: linear-gradient(135deg, $sand -48%, $grey--dark 24%, $grey--darker);
+        background: linear-gradient(135deg, $sand -48%, $grey-800 24%, $grey-900);
       }
       &:nth-child(2n) {
-        background: linear-gradient(45deg, $sand -48%, $grey--dark 24%, $grey--darker);
+        background: linear-gradient(45deg, $sand -48%, $grey-800 24%, $grey-900);
       }
     }
   }
