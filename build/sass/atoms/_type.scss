@@ -87,8 +87,8 @@ h1 {
 }
 p, li {
   font-size: 16px;
-  font-family: 'roboto_slab', serif;
-  color: $grey-sand-300;
+  font-family: 'roboto_slab--light', serif;
+  color: $grey-sand-100;
   // @media (min-width: 1940px) {
   //   font-size: 1.6vh;
   // }
@@ -114,7 +114,7 @@ h3 {
 }
 ul {
   &.list--unordered {
-    border-left: 1px solid $grey-sand-500;
+    border-left: 1px solid $grey-sand-300;
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
@@ -137,7 +137,7 @@ ul {
 
       a {
         text-decoration: none;
-        color: $color-primary;
+        color: $primary-200;
       }
 
       // @media (min-width: 1940px) {
@@ -157,13 +157,13 @@ a {
 
 .text {
     &--light {
-      color: $grey-sand-200;
+      color: $grey-sand-100;
     }
     &--purple-red {
       color: $purple-red;
     }
     &--color-primary {
-      color: $color-primary;
+      color: $primary-200;
     }
     &--orange--dark {
       color: $orange--dark;
@@ -172,7 +172,7 @@ a {
       color: $grey-blue-900;
     }
     &--grey {
-      color: $grey-sand-500;
+      color: $grey-sand-300;
     }
     &--gold {
       color: $apple-green;

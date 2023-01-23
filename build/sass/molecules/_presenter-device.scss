@@ -109,13 +109,13 @@ $toolbar--value: 0.4vw;
     border-color: $purple-red;
   }
   &__border--color-primary {
-    border-color: $color-primary;
+    border-color: $primary-200;
   }
   &__border--orange--dark {
     border-color: $orange--dark;
   }
   &__border--sand {
-    border-color: $sand;
+    border-color: $grey-sand-400;
   }
 
   &__toolbar {
@@ -320,7 +320,7 @@ $toolbar--value: 0.4vw;
           svg {
             display: block;
             height: calc(#{$toolbar--value} * 1.4);
-            stroke: $color-primary;
+            stroke: $primary-200;
             stroke-width: 2;
             stroke-linecap: round;
             transition: transform 1s ease-in-out;

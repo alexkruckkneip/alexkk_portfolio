@@ -3,12 +3,12 @@
 
 .btn-hexagon {
   fill: none;
-  stroke: $skin;
+  stroke: $grey-sand-300;
   stroke-width: 1;
 
   &__arrow {
     fill: none;
-    stroke: $color-primary;
+    stroke: $primary-200;
     stroke-width: 1;
     stroke-linecap: round;
   }
