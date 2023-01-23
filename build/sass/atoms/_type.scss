@@ -88,7 +88,7 @@ h1 {
 p, li {
   font-size: 16px;
   font-family: 'roboto_slab', serif;
-  color: $grey-300;
+  color: $grey-sand-300;
   // @media (min-width: 1940px) {
   //   font-size: 1.6vh;
   // }
@@ -114,7 +114,7 @@ h3 {
 }
 ul {
   &.list--unordered {
-    border-left: 1px solid $grey;
+    border-left: 1px solid $grey-sand-500;
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
@@ -157,7 +157,7 @@ a {
 
 .text {
     &--light {
-      color: $white--darker;
+      color: $grey-sand-200;
     }
     &--purple-red {
       color: $purple-red;
@@ -169,10 +169,10 @@ a {
       color: $orange--dark;
     }
     &--dark {
-      color: $grey-900;
+      color: $grey-blue-900;
     }
     &--grey {
-      color: $grey;
+      color: $grey-sand-500;
     }
     &--gold {
       color: $apple-green;

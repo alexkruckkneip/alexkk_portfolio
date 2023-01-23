@@ -6,10 +6,10 @@ a.button {
   text-decoration: none;
 }
 .button {
-  background-color: $grey-400;
-  border: 1px solid $grey-800;
+  background-color: $grey-sand-400;
+  border: 1px solid $grey-blue-800;
   border-radius: 8px;
-  color: $grey-900;
+  color: $grey-blue-900;
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
@@ -65,7 +65,7 @@ a.button {
     }
   }
   &__invert {
-    color: $grey-300;
+    color: $grey-sand-300;
   }
   &__scroll {
     border-radius: 50%;

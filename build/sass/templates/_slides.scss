@@ -14,10 +14,10 @@
   width: 100vw;
 
   &:nth-child(2n+1) {
-    background: linear-gradient(135deg, $grey-900, $grey-800);
+    background: linear-gradient(135deg, $grey-blue-900, $grey-blue-800);
   }
   &:nth-child(2n) {
-    background: linear-gradient(45deg, $grey-900, $grey-800);
+    background: linear-gradient(45deg, $grey-blue-900, $grey-blue-800);
   }
 
   .content {
@@ -156,7 +156,7 @@
     }
   }
   .text--light h3 {
-    color: $grey;
+    color: $grey-sand-500;
   }
   @media (max-width: $breakpoint--sm) {
     p {
@@ -287,7 +287,7 @@
       }
       &__area {
         h1 {
-          color: $grey;
+          color: $grey-sand-500;
           // font-size: 16px;
           line-height: 0.8em;
 
@@ -373,7 +373,7 @@
 
   .button {
     &__scroll {
-      border-color: $grey;
+      border-color: $grey-sand-500;
 
       @media (max-width: $breakpoint--sm) {
         // display: none;
@@ -388,30 +388,30 @@
   &--orange--dark {
     .slide {
       &:nth-child(2n+1) {
-        background: linear-gradient(135deg, $orange--dark -48%, $grey-800 24%, $grey-900);
+        background: linear-gradient(135deg, $orange--dark -48%, $grey-blue-800 24%, $grey-blue-900);
       }
       &:nth-child(2n) {
-        background: linear-gradient(45deg, $orange--dark -48%, $grey-800 24%, $grey-900);
+        background: linear-gradient(45deg, $orange--dark -48%, $grey-blue-800 24%, $grey-blue-900);
       }
     }
   }
   &--color-primary {
     .slide {
       &:nth-child(2n+1) {
-        background: linear-gradient(135deg, $color-primary -48%, $grey-800 24%, $grey-900);
+        background: linear-gradient(135deg, $color-primary -48%, $grey-blue-800 24%, $grey-blue-900);
       }
       &:nth-child(2n) {
-        background: linear-gradient(45deg, $color-primary -48%, $grey-800 24%, $grey-900);
+        background: linear-gradient(45deg, $color-primary -48%, $grey-blue-800 24%, $grey-blue-900);
       }
     }
   }
   &--sand {
     .slide {
       &:nth-child(2n+1) {
-        background: linear-gradient(135deg, $sand -48%, $grey-800 24%, $grey-900);
+        background: linear-gradient(135deg, $sand -48%, $grey-blue-800 24%, $grey-blue-900);
       }
       &:nth-child(2n) {
-        background: linear-gradient(45deg, $sand -48%, $grey-800 24%, $grey-900);
+        background: linear-gradient(45deg, $sand -48%, $grey-blue-800 24%, $grey-blue-900);
       }
     }
   }
